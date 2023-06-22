@@ -1,0 +1,32 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+.welcome {
+    background-color: yellowgreen;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color:aqua;
+}
+.search-container{
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 450px;
+border-radius: 50px;
+background-color: red;
+}
+
+.bar {
+ border-radius: 50px;
+}
+
+.search-button {
+    border-radius: 50px;
+}
+
