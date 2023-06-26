@@ -5,11 +5,8 @@ import HeaderWeather from './components/HeaderWeather/HeaderWeather.vue';
 <template>
   <!-- Our main app wrapper -->
   <main class="app">
-<HeaderWeather />
+   <HeaderWeather /> 
   </main>
  
 </template>
 
-<style scoped>
-
-</style>

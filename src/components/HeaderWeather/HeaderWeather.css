@@ -1,9 +1,12 @@
 .header-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    justify-content: center;
+    min-width: 400px;
+   min-height: 400px;   
+   background-color: #FFFFFF;
 }
-.welcome {
+.welcome { 
     background-color: yellowgreen;
 }
 
@@ -11,22 +14,78 @@
 display: flex;
 align-items: center;
 justify-content: center;
-background-color:aqua;
+position: relative;
+bottom: -50px;
+/* background-color:aqua; */
 }
+
+/* The flex and center display is the reason the search logo, search bar and button is next to each other in a row */
 .search-container{
     display: flex;
 align-items: center;
-justify-content: center;
-width: 450px;
+justify-content: flex-start;
+width: 360px;
+border: solid;
+ border-radius: 50px;
+ border-width: thin;
+ font-size: 18px;
+ /* padding: 16px 28px; */
 border-radius: 50px;
-background-color: red;
+background-color: transparent;
 }
 
 .bar {
+ /* display: none; */
+ outline: none;
+ width: 300px;
+ border: none;
  border-radius: 50px;
+ border-width: thin;
+ font-size: 18px;
+ padding: 16px 28px;
+ gap: 24px;
+ cursor: default;
+ background-color: transparent;
 }
+
+/* changes the placeholder text */
+.bar::placeholder{
+    position: relative;
+    right: -1px;
+    color: black;
+}
+
+/* When a user clicks on the placeholder in search bar, it disappears */
+input:focus::-webkit-input-placeholder {
+	color : transparent;
+}
+
+.bi-search{
+    position: relative;
+    right: -20px;
+}
+
+
 
 .search-button {
-    border-radius: 50px;
+    /* width: 100px; */
+    border: solid;
+    border-radius: 25px;
+    padding: 2px 35px;
+    height: 48px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    /* margin: 28px; */
+    position: relative;
+    right: -10px;
+    cursor: pointer;
+    background-color: black;
+    /* padding: 1.3em 3em; */
 }
 
+.search-button:hover {
+    background-color: #FFFFFF;
+    color: black;
+}

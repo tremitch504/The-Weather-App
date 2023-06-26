@@ -1,32 +1,38 @@
 /* @import './base.css'; */
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #7149C6;
-}
+  flex-direction: center;
+  justify-content: center;
+  /* text-align: center; */
+  min-height: fit-content;
+  background-color: rgb(72, 222, 100) !important;
+} 
 /* This where all of our content is displayed in app */
 #app {
-
-  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   padding: 2rem;
   border-radius: 5px;
+  min-width: 320px;
+  min-height: 670px;
+  /* position: relative;
+  top: -50px; */
   font-weight: normal;
-  background-color: green;
+  background-color: blue;
 }
 
-
+/* 
 a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-}
+} */
 
 /* /* @media (hover: hover) {
   a:hover {
