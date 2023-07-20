@@ -53,7 +53,7 @@ export default {
         <!-- color is text-light -->       
         <h2 class="description">description</h2>
     </div>     
-</div>
+</div>  
 </div>
 
 <!-- <div class="card card-2 w-100"> -->
