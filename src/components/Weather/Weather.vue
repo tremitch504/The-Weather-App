@@ -64,7 +64,7 @@ export default {
                 <th>Sea Level </th>
                 <td>100</td>
             </tr>
-            <tr>
+            <tr>   
                 <th>Sea Level </th>
                 <td>100</td>
             </tr>
