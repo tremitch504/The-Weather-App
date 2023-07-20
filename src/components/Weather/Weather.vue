@@ -48,11 +48,11 @@ export default {
     <p class="date">date</p>
     <small>time</small>
     <h2 class="place"> <i class="bi bi-geo-alt">New <small>Orleans</small></i></h2>
-    <div class="temp"> 
+    <div class="temp">       
         <h1 class="temp-weather">19&deg;</h1>
         <!-- color is text-light --> 
         <h2 class="description">description</h2>
-    </div>
+    </div>  
 </div>
 </div>
 
