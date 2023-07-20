@@ -1,0 +1,90 @@
+.weather-wrapper {
+    position: relative;
+    bottom: -50px;
+    padding: 0px;
+    min-width: 400px;
+   min-height: 1000px; 
+    /* background-color: pink; */
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+ 
+.weather-card {
+    width: 45%;
+    border-radius: 20px;
+    color: #FFF;
+    background-image: url("https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80") ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat; 
+}
+
+.weather-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+/* .temp {
+    position: absolute;
+    bottom: 0;
+} */
+
+.weather {
+    margin: .25rem;
+}
+
+.day {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.date {
+    color: "text-light";
+}
+
+.temp-weather {
+    margin: 0;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.descrption {
+    color: "text-light"
+}
+
+.card-2 {
+    background-color: red;
+    border-radius: 20px;
+}
+
+
+.details {
+    margin: 4%;
+}
+ 
+.location {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+
+
+.card-details {
+    margin-left: 19px;
+}
+
+.h1_left {
+    position: absolute;
+    bottom: 25px;
+    left: 16px;
+    font-size: 3vw;
+    line-height: 1.2;
+}

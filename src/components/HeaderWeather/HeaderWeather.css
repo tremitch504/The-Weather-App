@@ -3,20 +3,62 @@
     flex-direction: column;
     justify-content: center;
     min-width: 400px;
-   min-height: 400px;   
-   background-color: #FFFFFF;
+   min-height: 415px;   
+   /* background-color: greenyellow; */
 }
+
+/* 240 */
 .welcome { 
-    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* min-width: 300px; */
+    min-height: 100px; 
+    position: relative;
+    top: 20px;
+    background-color: #FFFFFF;  
 }
+
+.title-wrapper h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size:55px;
+    position: relative;
+    left: 370px
+
+}
+
+.title2 h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 55px;
+    position: relative;
+    left: 200px
+}
+.title-interest-wrapper h2 {
+    position: relative;
+    bottom: -30px;
+    right: -370px;
+    font-size: 20px;
+    /* background-color: aquamarine; */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .search-bar {
 display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
-bottom: -50px;
-/* background-color:aqua; */
+bottom: -70px;
+background-color:#FFFFFF;
 }
 
 /* The flex and center display is the reason the search logo, search bar and button is next to each other in a row */

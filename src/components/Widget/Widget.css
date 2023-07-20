@@ -1,0 +1,136 @@
+.widget-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: -300px;
+    left: 650px;
+    /* width: 400px; */
+    /* height: 00px; */
+    /* min-height: 200px; */
+   font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif;
+    /* background-color: orange; */
+    
+}
+
+
+/* svg.bi-cloud-sun {
+    height: 100px !important;
+    color: palegreen;
+} */
+
+.container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 0rem;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: aquamarine; */
+}
+
+ .widget {
+    /* display: flex;
+align-items: center;
+justify-content: center; */
+width: 400px;
+height: 200px;
+border-radius: 20px;
+background: rgba(299, 299, 2999, 0.4);
+background-image: url("https://images.unsplash.com/photo-1498462335304-e7263fe3925a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ymx1cnJ5fGVufDB8fDB8fHww&w=1000&q=80") ;
+}
+
+.widget:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.widget .left-side {
+    position: relative;
+    top: 35px;
+    right: -50px;
+    width: 200px;
+}
+.widget .right-side {
+    position: relative ;
+    top: -85px;
+    right: -250px;
+    width: 150px;
+    color: #fff;
+    margin: 50px 0;
+    /* background-color: aqua; */
+
+}
+
+.weather-status { 
+    color: #fff;
+    /* text-align: center;
+    margin-top: 0; */
+}
+
+.city {
+    font-size: 1em;
+    /* text-align: center;
+    margin: 0; */
+    text-shadow: 1px 1px 5px #707070;
+}
+.degree {
+font-size:  3em;
+font-weight: bold;
+/* text-align: center; */
+margin: 0;
+text-shadow: 1px 1px 5px #707070;
+}
+
+.bi-cloud-sun {
+    font-size: 50px;
+    /* color: yellow; */
+}
+
+.widget-details {
+/* background-color: aqua; */
+width: 400px;
+position: relative;
+bottom: 135px;
+left: 1px;
+display: flex;
+align-items: center;
+justify-content: space-between; 
+color: #fff;
+/* background-color: green; */
+}
+
+.widget-details div {
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    line-height: 100%;
+    font-size: 0.83em;
+    text-shadow: 1px 1px 5px #707070;
+}
+
+.widget-details div {
+    display: block;
+}
+
+/* i {
+    font-size: 50px; 
+    margin-bottom: 0; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+} */
+/* .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkmagenta;
+}  */
+
+.widget-header {
+    color: black;
+}

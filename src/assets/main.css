@@ -6,7 +6,7 @@ body {
   justify-content: center;
   /* text-align: center; */
   min-height: fit-content;
-  background-color: rgb(72, 222, 100) !important;
+  background-color: #FFFFFF !important;
 } 
 /* This where all of our content is displayed in app */
 #app {
@@ -18,12 +18,13 @@ body {
   /* margin-top: 5rem; */
   padding: 2rem;
   border-radius: 5px;
-  min-width: 320px;
-  min-height: 670px;
+  /* width: 1200px; */
+  min-width: 1400px;
+  min-height: 1000px;
   /* position: relative;
   top: -50px; */
   font-weight: normal;
-  background-color: blue;
+  background-color: #FFFFFF;
 }
 
 /* 
