@@ -42,17 +42,17 @@ export default {
 <div class="weather">
     <!-- sets margin or padding to .25rem -->
     <h2 class="day">      
-      Tuesday
-    </h2>
+      Tuesday 
+    </h2>   
     <!-- margin or padding to 0, color: text-light--> 
-    <p class="date">date</p>   
+    <p class="date">date</p>       
     <small>time</small>
     <h2 class="place"> <i class="bi bi-geo-alt">New <small>Orleans</small></i></h2>
     <div class="temp">       
         <h1 class="temp-weather">19&deg;</h1>
         <!-- color is text-light -->       
         <h2 class="description">description</h2>
-    </div>     
+    </div>        
 </div>  
 </div>
 
