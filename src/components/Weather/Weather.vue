@@ -49,6 +49,8 @@ export default {
                 
                         this.date = d.getDate() + '-' + this.monthNames[d.getMonth()] + '-' + d.getFullYear();
                         this.time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+
+                        this.searchResult = 'Found';
                         console.log(response);
         }).catch(err => {
             console.log(err);
@@ -71,18 +73,17 @@ export default {
 <!-- padding 0 -->
 <div class="weather-wrapper" >    
 
-    <div class="no-search-wrapper">
+    <div class="no-search-wrapper" v-if="this.searchResult === 'No results found for '">
      <div class="no-search-container">
         <i class="bi bi-search"></i> 
      <h2>No Results</h2>
      <h1 class="no-search-text">{{ this.searchResult + `"${this.city}"`}}</h1>
-</div>
-
-</div>
+     </div>
+    </div>
 
 
     <!-- display of flex -->
-<div class="weather-container" v-if="this.name !== null">
+<div class="weather-container" v-if="this.searchResult === 'Found'">
     <!-- width of 100 -->
 <div class="weather-card">
     <!-- padding of 3 -->
