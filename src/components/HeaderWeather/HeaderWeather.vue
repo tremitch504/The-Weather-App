@@ -1,6 +1,9 @@
 <script setup>
 import './HeaderWeather.css';
 import Weather from '../Weather/Weather.vue'
+import TestRun from '../TestRun/TestRun.vue';
+import cities from 'cities.json';
+import citiesData from '../../Cities/citiesData.json'
 </script>
 
 <script>
@@ -12,19 +15,89 @@ export default {
        return {
         city: '',
         showWeather: false, 
+        listData: [],
+        filterData: [],
+        isActive: true,
        }
+    },
+    mounted() {    //Mounted will run our function to print the data we need from listData
+        // this.listData();
     },
     watch: {
       city(newValue) {
         console.log("New Value: ", newValue)
-      } 
+      console.log(cities); 
+        //*****Here we need to use an API to capture cities*****
+        this.listData = citiesData.map(val => {
+
+          // console.log(val)
+            return {
+              name: val.city
+            }
+          })
+        
+
+          const word = newValue;
+
+     const newFilter = this.listData.filter((val) => {
+          return val.name.toLowerCase().includes(word.toLowerCase());
+})
+console.log('Filter:', newFilter)
+     if(word === "" || this.isActive === false) {
+      this.filterData = []; 
+      this.isActive = true;
+     } else {
+      this.filterData = newFilter.slice(0,10); 
+     }
+      },
+      listData(newValue){
+        
+        console.log('This is the List of Cities: ', newValue)
+      },
+      filterData(newValue){
+        console.log('New Filter ', newValue)
+      }
     },
     methods: {
-        searchWeather() {
+        async searchWeather(e) {
+          e.preventDefault();
           this.showWeather = false;
-          this.$nextTick();
+          await this.$nextTick();
           this.showWeather = true; 
+
+        },
+        async clearInput() {
+          this.city = '';
+        },
+        async newInput(val) {
+          this.city = val;
+          this.isActive = false;
+          
+          // this.filterData = [];
+          // this.showWeather = false;
+          // await this.$nextTick();
+          // this.showWeather = true; 
+
         }
+
+        //  async filterHandle(e) {
+        //   const word = e.target.value;
+
+        //  const newFilter = this.listData.filter((val) => {
+        //   return val.name.includes(word);
+        //     })
+
+        //   this.filterData = newFilter;
+        //  }
+
+        
+        // async listData() {
+        //   this.filterData = citiesData.map(val => {
+        //     return {
+        //       name: val.city
+        //     }
+        //   })
+        // }
     },
     // props: {
     //     city: String,
@@ -65,13 +138,23 @@ export default {
     <!-- Here we want the search bar placed -->
     <div class="search-bar">
     <div class="search-container">
-      <form class="search-form">
+      <form class="search-form" @submit.prevent="searchWeather">
         <!-- here is to put the search logo -->
-        <i class="bi bi-search"></i>
-          <input class="bar" type="text" v-model="city"  placeholder="Search for a city"  autocomplete="off">
-        </form> 
+        <i class="bi bi-search" v-if="this.city.length === 0"></i> 
+        <i class="bi bi-x-circle" v-if="this.city.length !== 0" v-on:click="clearInput"></i>
+          <input class="bar" type="text" v-on:@keyup.enter="searchWeather" v-model="city" v-on:change="filterHandle" placeholder="Search for a city"  autocomplete="off">
+        </form>   
     </div>
-    <button class="search-button" role="button" @click="searchWeather ">Search</button>
+     <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
+    </div>
+
+    <!-- Here we can create a search filter and drop down -->
+ <div class="city-list-wrapper"  v-if="filterData.length !== 0"> 
+  <div class="city-list-container" v-for="city in filterData" v-on:click="newInput(city.name)">
+   <p class="city-name" v-on:click="newInput(city.name)"> {{ city.name }} </p>
+
+</div>
+      
     </div>
 
 </div>
@@ -80,6 +163,7 @@ export default {
 
 <!-- place Weather section here -->
 <Weather :city="city" v-if="showWeather"/>
+
 
 
 

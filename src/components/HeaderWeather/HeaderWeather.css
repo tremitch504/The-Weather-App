@@ -107,6 +107,10 @@ input:focus::-webkit-input-placeholder {
     right: -20px;
 }
 
+.bi-x-circle {
+    position: relative;
+    right: -20px;
+}
 
 
 .search-button {
@@ -131,3 +135,47 @@ input:focus::-webkit-input-placeholder {
     background-color: #FFFFFF;
     color: black;
 }
+
+/* z-index helped us from having a overlapping content */
+.city-list-wrapper {
+    width: 300px;
+    height: 30%;
+    margin-top: 5px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 464px;
+    right: 660px;
+    z-index: 1;  
+    background-color: #FFFFFF;
+}
+
+/* Here we can add a style to remove scroll bar if we want */
+
+
+.city-name {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.city-list-container:hover{
+    background-color: lightgrey;
+}
+/* .city-name:hover {
+    background-color: lightgrey;
+} */
+
+
+/* .names {
+    position: relative;
+    bottom: -300px;
+    bottom: -60px;
+} */

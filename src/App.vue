@@ -2,7 +2,7 @@
 import NavLogo from './components/Nav/NavLogo.vue';
 import HeaderWeather from './components/HeaderWeather/HeaderWeather.vue';
 import Weather from './components/Weather/Weather.vue'
-import Widget from './components/Widget/Widget.vue';
+// import Widget from './components/Widget/Widget.vue';
 import TestRun from './components/TestRun/TestRun.vue';
 </script>
 

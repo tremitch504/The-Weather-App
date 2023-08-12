@@ -1,18 +1,34 @@
 .test-wrapper {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    min-width: 1%;
     min-height: 100%;
+    position: absolute;
     background-color: orangered;
 }
 
-.test-container {
+ .test-container {
     display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     width: 400px;
-height:500px;
+    height:500px;
+/* position: relative; */
 background-color: gold;
 }
 
-.test-button {
+/* .test-city{
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+} */
+/* .test-container p {
+    position: relative;
+    bottom: -400px;
+    right: -300px;
+} */
+/* .test-button {
  position: relative;
  width: 200px;
-}
+}  */

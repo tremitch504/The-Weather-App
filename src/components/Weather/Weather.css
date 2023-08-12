@@ -1,10 +1,12 @@
+
 .weather-wrapper {
     position: relative;
-    bottom: -50px;
+    bottom: -15px;
     padding: 0px;
     min-width: 400px;
    min-height: 1000px; 
     /* background-color: pink; */
+  
 }
 
 .weather-container {
@@ -13,16 +15,27 @@
     /* background-color: blue; */
 }
  
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .weather-card {
     width: 45%;
     border-radius: 20px;
     color: #FFF;
-    background-image: url("https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80") ;
+    background-image: url("https://images.unsplash.com/photo-1588420343618-6141b3784bce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==&auto=format&fit=crop&w=2012&q=80") ;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); 
     background-repeat: no-repeat; 
+    
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+   
 }
 
 .weather-card:hover{
@@ -87,4 +100,43 @@
     left: 16px;
     font-size: 3vw;
     line-height: 1.2;
+}
+
+
+.no-search-wrapper {
+    min-width: 400px;
+    min-height: 500px;
+    /* background-color: yellowgreen; */
+}
+
+.no-search-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: 700px;
+    min-height: 500px;
+   position: relative;
+   right: -300px;
+   /* background-color: red; */
+} 
+
+.no-search-container .bi-search {
+    font-size: 90px;
+    position: relative;
+    right: -257px;
+    top: -150px;
+}
+
+.no-search-container h2 {
+    position: relative;
+    right: -230px;
+    top: -150px;
+}
+
+.no-search-container h1 {
+    position: relative;
+    right: -180px;
+    top: -150px;
+    font-size: 150%;
 }
