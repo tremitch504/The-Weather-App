@@ -69,7 +69,7 @@ export default {
 
 
 <!-- padding 0 -->
-<div class="weather-wrapper" >
+<div class="weather-wrapper" >    
 
     <div class="no-search-wrapper">
      <div class="no-search-container">
