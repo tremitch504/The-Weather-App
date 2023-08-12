@@ -61,7 +61,7 @@ export default {
         searchResult(newValue) {
           console.log('result status: ', newValue);
         }
-    }
+    }   
 }
 </script>
 
