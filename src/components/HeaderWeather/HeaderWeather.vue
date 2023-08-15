@@ -18,10 +18,11 @@ export default {
         listData: [],
         filterData: [],
         isActive: true,
+        tempDegree: 'fahrenheit'
        }
     },
-    mounted() {    //Mounted will run our function to print the data we need from listData
-        // this.listData();
+    mounted() {    
+        
     },
     watch: {
       city(newValue) {
@@ -56,6 +57,9 @@ console.log('Filter:', newFilter)
       },
       filterData(newValue){
         console.log('New Filter ', newValue)
+      },
+      tempDegree(newValue){
+        console.log('New Temp ', newValue)
       }
     },
     methods: {
@@ -78,39 +82,26 @@ console.log('Filter:', newFilter)
           // await this.$nextTick();
           // this.showWeather = true; 
 
+        }, 
+        async changeTemp(e){
+          console.log(e.target.checked);
+          // e.preventDefault()
+          // this.tempDegree = 'celsius'; 
+          if(e.target.checked === true) {
+            this.tempDegree = 'celsius'; 
+          }
+          if(e.target.checked !== true){
+            this.tempDegree = 'fahrenheit';
         }
 
-        //  async filterHandle(e) {
-        //   const word = e.target.value;
+        //This is where we will display the updated data when the toggle is checked and active
+        this.showWeather = false;
+          await this.$nextTick();
+        this.showWeather = true; 
+      }
 
-        //  const newFilter = this.listData.filter((val) => {
-        //   return val.name.includes(word);
-        //     })
-
-        //   this.filterData = newFilter;
-        //  }
-
-        
-        // async listData() {
-        //   this.filterData = citiesData.map(val => {
-        //     return {
-        //       name: val.city
-        //     }
-        //   })
-        // }
     },
-    // props: {
-    //     city: String,
-
-    // },
-    // data() {
-    //     return{
-            
-    //     }
-    // },
-    // computed: {
-    //     console: (city = city) => city
-    // }
+   
 }
 </script>
 
@@ -146,6 +137,12 @@ console.log('Filter:', newFilter)
         </form>   
     </div>
      <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
+
+ <input  type="checkbox" id="switch" v-on:change="changeTemp"/>
+ <label for="switch">
+<h1 class="fahrenheit">&deg;F</h1>
+<h1 class="celsius">&deg;C</h1>
+ </label>
     </div>
 
     <!-- Here we can create a search filter and drop down -->
@@ -162,7 +159,7 @@ console.log('Filter:', newFilter)
 
 
 <!-- place Weather section here -->
-<Weather :city="city" v-if="showWeather"/>
+<Weather :city="city" :tempDegree="tempDegree" v-if="showWeather"/>
 
 
 

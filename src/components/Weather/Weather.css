@@ -21,7 +21,7 @@
   }
 
 .weather-card {
-    width: 45%;
+    width: 35%;
     border-radius: 20px;
     color: #FFF;
     background-image: url("https://images.unsplash.com/photo-1588420343618-6141b3784bce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==&auto=format&fit=crop&w=2012&q=80") ;
@@ -62,14 +62,37 @@
     color: "text-light";
 }
 
+.place {
+    position: relative;
+    right: -250px;
+    top: -100px;
+}
+
+.temp {
+    position: relative;
+    right: -60px;
+    top: -65px;
+    /* background-color: purple; */
+}
+
 .temp-weather {
     margin: 0;
     font-weight: 700;
     font-size: 4em;
+    position: relative;
+    right: -100px;
+
 }
 
-.descrption {
-    color: "text-light"
+.temp .icon-url {
+    position: relative;
+    right: -100px;
+}
+
+.description {
+    position: relative;
+    right: -60px;
+    color: "text-light";
 }
 
 .card-2 {

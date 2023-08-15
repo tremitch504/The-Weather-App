@@ -6,6 +6,8 @@ body {
   justify-content: center;
   /* text-align: center; */
   min-height: fit-content;
+  /* overflow-x as hidden avoids our webpage from being scrolled to the right. Instead it will be horizontal  */
+  overflow-x: hidden;
   background-color: #FFFFFF !important;
 } 
 /* This where all of our content is displayed in app */

@@ -14,6 +14,8 @@ export default {
     },
     props: {
         city: String,
+        tempDegree: String,
+       
     },
     data() {
         return {
@@ -28,42 +30,119 @@ export default {
            humidity: null,
            pressure: null,
            searchResult: null,
+           degreeLetter: null,
        
         }
     },
-   async created() {    //This is where we will do a axios request to capture data from the Weather API Open Weather Map. But search on how we can use GraphQl
-        await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=112e66de63cb9dd94704577809734305`).then( response => {
+   mounted() {
+      this.getWeather()
+    // console.log('current degree: ', this.temperature)
+    },
+//    async created() {    //This is where we will do a axios request to capture data from the Weather API Open Weather Map. But search on how we can use GraphQl
+        // await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=112e66de63cb9dd94704577809734305`).then( response => {
 
             
-                        const weatherData = response.data;
-                        //We need to change the temperature to Fahrenheit
-                        this.temperature = Math.round((Math.round(weatherData.main.temp) * (9 / 5)) + 32);
-                        this.description = weatherData.weather[0].description;
-                        this.name = weatherData.name;  
-                        this.iconUrl = ` https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
-                        this.wind = Math.round(weatherData.wind.speed);
-                        this.humidity = Math.round(weatherData.main.humidity);
-                        this.pressure = Math.round(weatherData.main.pressure);
+        //                 const weatherData = response.data;
+        //                 We need to change the temperature to Fahrenheit
+        //                 if(this.tempDegree === 'celsius') {
+        //                     this.temperature = Math.round(weatherData.main.temp)
+        //                 }
+
+            
+        //                  this.temperature = Math.round((Math.round(weatherData.main.temp) * (9 / 5)) + 32);
+                        
+                        
+        //                 this.description = weatherData.weather[0].description;
+        //                 this.name = weatherData.name;  
+        //                 this.iconUrl = ` https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
+        //                 this.wind = Math.round(weatherData.wind.speed);
+        //                 this.humidity = Math.round(weatherData.main.humidity);
+        //                 this.pressure = Math.round(weatherData.main.pressure);
                   
-                        const d = new Date(); 
-                
-                        this.date = d.getDate() + '-' + this.monthNames[d.getMonth()] + '-' + d.getFullYear();
-                        this.time = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+        //                 const d = new Date(); 
+                          
+        //                 this.date = d.getDate() + ' ' + this.monthNames[d.getMonth()] + ' ' + d.getFullYear();
 
-                        this.searchResult = 'Found';
-                        console.log(response);
-        }).catch(err => {
-            console.log(err);
-             this.searchResult = 'No results found for ';
-        })
+        //                  this.time = this.changeHour(d.getHours()) + ':' + this.addZero(d.getMinutes()) + ':' + this.addZero(d.getSeconds());
+                           
+        //                 this.searchResult = 'Found';
+        //                 console.log(response);
+        // }).catch(err => {
+        //     console.log(err);
+        //      this.searchResult = 'No results found for ';
+        // })
 
 
-    },
+    // },
     watch: {
+       
         searchResult(newValue) {
           console.log('result status: ', newValue);
+        },
+        temperature(newValue){
+            console.log('temp status ', newValue)
+            // console.log('degree: ', this.tempDegree)
+            // if(this.tempDegree === 'celsius') { 
+            //     this.temperature = Math.round((newValue - 32) * 5 / 9);
+            //     console.log('new Temp ', this.temperature); 
+            //  }
+            //  console.log('new Temp ', this.temperature);
         }
-    }   
+    }, methods: {
+         async getWeather() {
+          await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=112e66de63cb9dd94704577809734305`).then( response => {
+
+            
+const weatherData = response.data;
+
+//If the toggle checked as celsius, return the temperature as celsius.
+if(this.tempDegree === 'celsius') {
+    this.temperature = Math.round(weatherData.main.temp)
+    this.degreeLetter = 'C';
+}
+//We need to change the temperature to Fahrenheit
+if(this.tempDegree === 'fahrenheit'){
+    this.temperature = Math.round((Math.round(weatherData.main.temp) * (9 / 5)) + 32);
+    this.degreeLetter = 'F';
+}
+ 
+this.description = weatherData.weather[0].description;
+this.name = weatherData.name;  
+this.iconUrl = ` https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
+this.wind = Math.round(weatherData.wind.speed);
+this.humidity = Math.round(weatherData.main.humidity);
+this.pressure = Math.round(weatherData.main.pressure);
+
+const d = new Date(); 
+  
+this.date = d.getDate() + ' ' + this.monthNames[d.getMonth()] + ' ' + d.getFullYear();
+
+ this.time = this.changeHour(d.getHours()) + ':' + this.addZero(d.getMinutes()) + ':' + this.addZero(d.getSeconds());
+   
+this.searchResult = 'Found';
+// console.log('current Degree ', this.temperature);
+console.log(response);
+}).catch(err => {
+console.log(err);
+this.searchResult = 'No results found for ';
+})
+
+
+          }
+
+        ,
+        addZero(num) {
+          return num < 10 ? `0${num}`:num;
+        },
+        changeHour(num){
+            num = num >= 12 ? num - 12 : num;
+            return num;
+        },
+       
+    
+    },
+    
+
 }
 </script>
 
@@ -97,7 +176,7 @@ export default {
     <small>{{ time }}</small>
     <h2 class="place"> <i class="bi bi-geo-alt">{{ name }} <small></small></i></h2>
     <div class="temp">       
-        <h1 class="temp-weather">{{ temperature }}&deg;F</h1>
+        <h1 class="temp-weather">{{ temperature}}&deg;{{degreeLetter}}</h1>
         <img class='icon-url' :src="iconUrl" />
         <!-- color is text-light -->       
         <h2 class="description">{{ description }}  </h2> 
@@ -105,45 +184,9 @@ export default {
     </div>        
 </div>  
 </div>
+</div> 
 
-<!-- <div class="card card-2 w-100"> -->
-    <!-- margin of 4 -->
-    <!-- <table class="details"> 
-        <tbody>
-            <tr>
-                <th>Sea Level </th>
-                <td>100</td>
-            </tr>
-            <tr>   
-                <th>Sea Level </th>
-                <td>100</td>
-            </tr>
-            <tr>
-                <th>Sea Level</th>
-                <td>100</td>
-            </tr>
-        </tbody>
-    </table> -->
-
-<!-- This where we will have our days of the week component -->
-
-<!-- <DaysOfWeek> </DaysOfWeek> -->
-
-
-
-
-    <!-- display of flex, margin of 3, and justify-content will be centered -->
-    <!-- <div id="div_Form" class="location">
-        <form action="">
-            <input type="button" value="Change Location" class="btn change-btn btn-primary">
-        </form>
-    </div> -->
-<!-- </div> -->
-
-
-</div>
-
-<Widget  :name="this.city" :wind="wind" :humidity="humidity" :pressure="pressure"/>
+<Widget  :name="this.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
 
 </div>
 

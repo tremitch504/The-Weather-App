@@ -7,9 +7,8 @@ import moment from 'moment';
 <script>
 export default {
     props: {
-        wind: Number,
-        humidity: Number,
-        pressure: Number,
+        degreeLetter: String,
+        tempDegree: String,
         name: String,
     },
     data() {
@@ -34,10 +33,23 @@ export default {
                 // we use isSame method on our moment, so we can push the items that doesn't have the same dates on the dt key inside the accumulator array.
                 //we are using the some method so that way if at least one item has the same dates it will return true, but if it returns false we want to push that item into the accumulator array
                 const forecastData = res.data.list
+    
                 const filterData = forecastData.map(day => {
-                    return {
+                   
+                    let temp;
+                      console.log('current degree:', this.tempDegree)
+                    if(this.tempDegree === 'celsius') {
+                        temp = Math.round(day.main.temp);
+                        console.log('current temp:', temp);
+                    }
+                    //  console.log('current temp: ', temp);
+                    if(this.tempDegree === 'fahrenheit') {
+                         temp = Math.round((Math.round(day.main.temp) * (9 / 5)) + 32);
+                    }
+                        
+                    return { 
                         date: moment(day.dt_txt.split(' ')[0]), 
-                        temperature: Math.round(((Math.round(day.main.temp) * (9 / 5)) + 32)),
+                        temperature: temp,
                         description: day.weather[0].description,
                         iconUrl: `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`,
                         wind: Math.round(day.wind.speed),
@@ -87,7 +99,7 @@ export default {
 
             <div class="right-side">
                 <h5 class="city">{{ this.getNameDay(day.date) }}</h5>
-                <h5 class="degree">{{ day.temperature }}&#176;F</h5>
+                <h5 class="degree">{{ day.temperature }}&#176;{{ this.degreeLetter }}</h5>
             </div>
  
 
