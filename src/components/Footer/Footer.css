@@ -1,0 +1,189 @@
+/* #272829 */
+
+
+
+
+/* { */
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    /* font-family: 'Poppins', sans-serif; */
+/* } */
+
+/* The properties here will make our footer wrapper displayed at the every end of our page at bottom */
+/* relative will make the footer move from its position when responsive */
+.footer-wrapper {
+    /* display: grid;
+    justify-content: end;
+    align-content: end; */
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    /* margin-top: auto; */
+    width: 100%;
+    /* height: 20px; */
+    /* min-height: 100vh; */
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    /* padding: 50px; */
+    background: #272829;
+}
+
+ /* footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #272829;
+}  */
+
+.footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.about-us li {
+    display: list-item
+}
+
+.about-us h2 {
+     position: relative;
+     font-weight: 600;
+     margin-bottom: 15px;
+}
+
+.about-us-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+.about-us-links li {
+    list-style: none;
+}
+.about-us-links li a {
+ display: inline-block;
+ width: 36px;
+ height: 36px;
+ background: #FFFFFF;
+ display: grid;
+ align-content: center;
+ justify-content: center;
+ text-decoration: none;
+}
+
+.about-us-links li a i {
+    color: black;
+    font-size: 20px;
+}
+
+.contact-us {
+    position: relative;
+    right: -500px;
+}
+
+.contact-us h2{
+    position: relative;
+     font-weight: 600;
+     margin-bottom: 15px;
+}
+.contact-us li {
+    display: list-item;
+}
+.contact-us .info {
+position: relative;
+}
+
+.contact-us .info li {
+    display: grid;
+    grid-template-columns:  30px 1fr;
+    margin-bottom: 16px;
+    
+}
+
+.contact-us .info li span {
+    color: #FFFFFF;
+    font-size: 20px;
+  
+}
+
+.contact-us .info li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.copyright-text {
+    width: 100%;
+    background-color: #272829;
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* Media Query section to make the footer section responsive */
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    /* styles */
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    /* position: rel; */
+    /* bottom: 0;   */
+    /* left: 0; */
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* .footer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } */
+
+    .contact-us {
+        position: relative;
+        right: 0px;
+    }
+
+    .contact-us .info li a {
+        font-size: 10px;
+    }
+}
+
+
+/* 
+@media (max-width: 1128px) {
+
+    .footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+       
+    }
+} */
+
+/* @media (max-width: 1015px) {
+    .footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        }
+} */

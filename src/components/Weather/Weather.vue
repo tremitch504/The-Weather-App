@@ -125,6 +125,7 @@ console.log(response);
 }).catch(err => {
 console.log(err);
 this.searchResult = 'No results found for ';
+this.name = this.city;
 })
 
 
@@ -156,7 +157,7 @@ this.searchResult = 'No results found for ';
      <div class="no-search-container">
         <i class="bi bi-search"></i> 
      <h2>No Results</h2>
-     <h1 class="no-search-text">{{ this.searchResult + `"${this.city}"`}}</h1>
+     <h1 class="no-search-text">{{ this.searchResult + `"${this.name}"`}}</h1>
      </div>
     </div>
 
@@ -174,7 +175,11 @@ this.searchResult = 'No results found for ';
     <!-- margin or padding to 0, color: text-light--> 
     <p class="date">{{ date }}</p>       
     <small>{{ time }}</small>
-    <h2 class="place"> <i class="bi bi-geo-alt">{{ name }} <small></small></i></h2>
+
+    <div class="place-container">
+        <h2 class="place"> <i class="bi bi-geo-alt">{{ name }} <small></small></i></h2>
+    </div>
+
     <div class="temp">       
         <h1 class="temp-weather">{{ temperature}}&deg;{{degreeLetter}}</h1>
         <img class='icon-url' :src="iconUrl" />

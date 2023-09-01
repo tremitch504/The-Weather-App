@@ -1,16 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer components {
+     .widget-wrapper {
+
+        @apply pt-8 pb-7
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: -375px;
+        left: 540px;
+        width: 900px;
+       font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+        background-color: yellow; */
+    } 
+    
+    .container{
+        /* @apply bg-red */
+    }
+
+}
+
+
+
+
+
+
+
 .widget-wrapper {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+     flex-direction: column;
     justify-content: space-between;
     position: relative;
     top: -375px;
-    left: 480px;
-    width: 900px;
-    /* height: 00px; */
-    /* min-height: 200px; */
+    left: 540px;
+    width: 900px; */
    font-family: 'Libre Baskerville', serif;
 font-family: 'Poppins', sans-serif;
-    /* background-color: orange; */
+    /* background-color: yellow;  */
 }
 
 
@@ -23,28 +56,27 @@ font-family: 'Poppins', sans-serif;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    width: 400px;
-    height: 500px;
+    /* width: 400px;
+    height: 500px; */
     display: grid;
     grid-template-columns: repeat(2, 450px);
-    gap: 0rem;
-    /* transform: translate(-50%, -50%); */
+    gap: 1rem;
     /* background-color: aquamarine; */
 }
 
  .widget {
-    /* display: flex;
-align-items: center;
-justify-content: center; */
+ /* display: flex;
+ flex-direction: column;
+ justify-content: flex-start; */
 width: 400px;
 height: 200px;
 border-radius: 20px;
-background: rgba(299, 299, 2999, 0.4);
+/* background: rgba(299, 299, 2999, 0.4); */
 background-image: url("https://images.unsplash.com/photo-1498462335304-e7263fe3925a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ymx1cnJ5fGVufDB8fDB8fHww&w=1000&q=80") ;
 
 animation-duration: 0.5s;
     animation-name: animate-fade;
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
     animation-fill-mode: backwards;
 }
 
@@ -65,34 +97,29 @@ animation-duration: 0.5s;
     top: 35px;
     right: -50px;
     width: 200px;
+    /* background-color: green; */
 }
 .widget .right-side {
     position: relative ;
     top: -85px;
-    right: -250px;
+    right: -230px;
     width: 150px;
     color: #fff;
     margin: 50px 0;
-    /* background-color: aqua; */
-
+    /* background-color: yellow; */
 }
 
 .weather-status { 
     color: #fff;
-    /* text-align: center;
-    margin-top: 0; */
 }
 
 .city {
     font-size: 1em;
-    /* text-align: center;
-    margin: 0; */
     text-shadow: 1px 1px 5px #707070;
 }
 .degree {
 font-size:  3em;
 font-weight: bold;
-/* text-align: center; */
 margin: 0;
 text-shadow: 1px 1px 5px #707070;
 }
@@ -100,23 +127,21 @@ text-shadow: 1px 1px 5px #707070;
 .icon-url{
     height: 85px;
     width: 85px;
-    /* color: yellow; */
 }
 
 .widget-details {
-/* background-color: aqua; */
 width: 400px;
 position: relative;
 bottom: 135px;
-left: 1px;
+ left: 1px;
 display: flex;
 align-items: center;
 justify-content: space-between; 
 color: #fff;
-/* background-color: green; */
+/* background-color: aqua; */
 }
 
-.widget-details div {
+.widget-details h1 {
     margin: 5px 10px 5px 10px;
     text-align: center;
     line-height: 100%;
@@ -124,24 +149,66 @@ color: #fff;
     text-shadow: 1px 1px 5px #707070;
 }
 
-.widget-details div {
+/* .widget-details h1 {
     display: block;
-}
-
-/* i {
-    font-size: 50px; 
-    margin-bottom: 0; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
 } */
-/* .left-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: darkmagenta;
-}  */
 
 .widget-header {
-    color: black;
+    color: black;  
 }
+
+
+
+
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .widget {
+        width: 350px;
+        /* height: 250px; */
+    }
+    .widget-details {
+        width: 350px;
+    }
+
+    .degree {
+        font-size:  3em;
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 1px 1px 5px #707070;
+        }
+}
+
+/* Mobile */
+/* @media (max-width: 480px) {
+
+.widget-wrapper {
+    top: 30px;
+    left: 0;
+
+} */
+
+/* Here again we are creating that grid column and gap between each widget */
+/* .container {
+    grid-template-columns: repeat(1, 450px);
+    gap: 2rem; 
+}
+
+.widget { 
+    width: 360px;
+    height: 200px;
+}
+
+.widget-details {
+    width: 350px;
+}
+} */

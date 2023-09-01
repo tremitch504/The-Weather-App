@@ -119,12 +119,15 @@ console.log('Filter:', newFilter)
      <div class="title2">
         <h2>see what the weather is like today</h2>
      </div>
+    </section>
+
     <div class="title-interest-wrapper">
         <h2 class="title-interest">
             Hope to see if it's not raining? The Weather App keeps you updated.
         </h2>
     </div>
-    </section>
+
+
     
     <!-- Here we want the search bar placed -->
     <div class="search-bar">
@@ -136,23 +139,28 @@ console.log('Filter:', newFilter)
           <input class="bar" type="text" v-on:@keyup.enter="searchWeather" v-model="city" v-on:change="filterHandle" placeholder="Search for a city"  autocomplete="off">
         </form>   
     </div>
-     <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
 
- <input  type="checkbox" id="switch" v-on:change="changeTemp"/>
- <label for="switch">
-<h1 class="fahrenheit">&deg;F</h1>
-<h1 class="celsius">&deg;C</h1>
- </label>
+    <div class="button-wrapper">
+      <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
+ 
+  <input  type="checkbox" id="switch" v-on:change="changeTemp"/>
+  <label for="switch">
+ <h1 class="fahrenheit">&deg;F</h1>
+ <h1 class="celsius">&deg;C</h1>
+  </label>
+    </div>
+    
     </div>
 
     <!-- Here we can create a search filter and drop down -->
- <div class="city-list-wrapper"  v-if="filterData.length !== 0"> 
+    <!-- You can have this in one div with the search bar and have it display flex and column  -->
+ <!-- <div class="city-list-wrapper"  v-if="filterData.length !== 0"> 
   <div class="city-list-container" v-for="city in filterData" v-on:click="newInput(city.name)">
    <p class="city-name" v-on:click="newInput(city.name)"> {{ city.name }} </p>
 
 </div>
       
-    </div>
+    </div> -->
 
 </div>
 

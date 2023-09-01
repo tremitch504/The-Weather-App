@@ -1,45 +1,132 @@
-.header-wrapper {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* remember padding is for your spacing. top, bottom, right,left */
+@layer components {
+
+
+    .header-wrapper {
+       @apply  flex flex-col justify-center space-y-8 bg-white sm:h-80 pt-8  md:h-96 lg:h-96
+    }
+    
+    .welcome {
+        @apply flex flex-col 
+    }
+
+    .title-wrapper  {
+        @apply flex  justify-center 
+    }
+    .title-wrapper h2 {
+        @apply font-serif sm:text-3xl md:text-4xl lg:text-5xl
+    }
+
+    .title2 {
+        @apply flex  justify-center 
+    }
+
+    .title2 h2 {
+       @apply   font-serif sm:text-3xl md:text-4xl lg:text-5xl
+    }
+
+
+   .title-interest-wrapper {
+    @apply flex  justify-center 
+   }
+
+   .title-interest-wrapper h2 {
+    @apply text-xl
+   }
+
+
+/* Search Bar area  */
+ .search-bar { 
+   /* we set the content centered and its items, gave it some space in between each 2rem */
+    @apply  sm:flex justify-center items-center pl-4
+  
+    } 
+
+
+    .search-container{
+
+        @apply flex justify-center items-center w-80 border-solid rounded-full border-2  text-base bg-transparent 
+     
+    }
+    
+    .bar {
+
+        @apply outline-none w-72 border-none rounded-full border-2 px-4 px-8 gap-6 cursor-default bg-transparent 
+        
+        
+       
+    }
+
+    .bar::placeholder{
+    @apply text-black
+    }
+
+    /* used align-items to get items centered */
+    .button-wrapper {
+        @apply flex justify-center items-center pl-4 
+    }
+    .search-button {
+        @apply border-solid py-0.5 px-9 h-12 box-border text-center text-white text-sm cursor-pointer bg-black
+        /* border: solid;
+        border-radius: 25px;
+        padding: 2px 35px;
+        height: 48px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 14px;
+        position: relative;
+        right: -90px;
+        cursor: pointer;
+        background-color: black; */
+    } 
+ } 
+/* .header-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 400px;
+    min-width: auto;
    min-height: 415px;   
-   /* background-color: greenyellow; */
-}
+   background-color: greenyellow;
+} */
 
 /* 240 */
-.welcome { 
+/* .welcome { 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-width: 300px; */
+    min-width: 300px;
     min-height: 100px; 
-    position: relative;
+    
     top: 20px;
     background-color: #FFFFFF;  
-}
+    width: 100%;
+} */
 
-.title-wrapper h2 {
+/* .title-wrapper h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size:55px;
+    font-size: 55px;
     position: relative;
     left: 370px
+} */
 
-}
-
-.title2 h2 {
+/* .title2 h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 55px;
     position: relative;
     left: 200px
-}
-.title-interest-wrapper h2 {
+} */
+/* .title-interest-wrapper h2 {
     position: relative;
     bottom: -30px;
     right: -370px;
     font-size: 20px;
-    /* background-color: aquamarine; */
-}
+    background-color: aquamarine;
+} */
 
 
 
@@ -52,83 +139,81 @@
 
 
 
-.search-bar {
+/* .search-bar {
 display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
 bottom: -70px;
 background-color:#FFFFFF;
-}
+} */
 
 /* The flex and center display is the reason the search logo, search bar and button is next to each other in a row */
 .search-container{
-    display: flex;
+    /* display: flex;
 align-items: center;
 justify-content: flex-start;
 width: 360px;
-border: solid;
- border-radius: 50px;
- border-width: thin;
- font-size: 18px;
+border: solid; */
+ /* border-radius: 50px; */
+ /* border-width: thin;
+ font-size: 18px; */
  /* padding: 16px 28px; */
-border-radius: 50px;
-background-color: transparent;
+/* border-radius: 50px;
+position: relative;
+right: -78px;
+background-color: transparent; */
 }
 
 .bar {
- /* display: none; */
- outline: none;
+ /* outline: none;
  width: 300px;
- border: none;
- border-radius: 50px;
- border-width: thin;
- font-size: 18px;
+ border: none; */
+ /* border-radius: 50px; */
+ /* border-width: thin;
+ font-size: 18px; */
  padding: 16px 28px;
- gap: 24px;
+ /* gap: 24px;
  cursor: default;
- background-color: transparent;
+ background-color: transparent; */
 }
 
 /* changes the placeholder text */
-.bar::placeholder{
+/* .bar::placeholder{
     position: relative;
     right: -1px;
     color: black;
-}
+} */
 
 /* When a user clicks on the placeholder in search bar, it disappears */
 input:focus::-webkit-input-placeholder {
 	color : transparent;
 }
 
-.bi-search{
+/* .bi-search{
     position: relative;
     right: -20px;
-}
+}  */
 
-.bi-x-circle {
+ /* .bi-x-circle {
     position: relative;
     right: -20px;
-}
+} */
 
 
 .search-button {
-    /* width: 100px; */
     border: solid;
     border-radius: 25px;
-    padding: 2px 35px;
-    height: 48px;
+    /* padding: 2px 35px; */
+    /* height: 48px;
     box-sizing: border-box;
     text-align: center;
     color: #FFFFFF;
     font-size: 14px;
-    /* margin: 28px; */
     position: relative;
-    right: -10px;
+    right: -90px;
     cursor: pointer;
-    background-color: black;
-    /* padding: 1.3em 3em; */
+    background-color: black; */
 }
 
 .search-button:hover {
@@ -137,38 +222,35 @@ input:focus::-webkit-input-placeholder {
 }
 
 /* z-index helped us from having a overlapping content */
-.city-list-wrapper {
+/* .city-list-wrapper {
     width: 300px;
     height: 30%;
     margin-top: 5px;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     overflow: hidden;
     overflow-y: auto;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     position: absolute;
     top: 464px;
     right: 660px;
     z-index: 1;  
     background-color: #FFFFFF;
-}
+} */
 
 /* Here we can add a style to remove scroll bar if we want */
 
 
-.city-name {
+/* .city-name {
     width: 100px;
     height: 35px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     color: black;
-}
+} */
 
-.city-list-container:hover{
+/* .city-list-container:hover{
     background-color: lightgrey;
-}
+} */
 /* .city-name:hover {
     background-color: lightgrey;
 } */
@@ -193,7 +275,7 @@ input:focus::-webkit-input-placeholder {
    background: #068FFF;
    border-radius: 200px;
    position: relative;
-   right: -40px;
+   left: 0;
 }
 
 .search-bar label .fahrenheit {
@@ -245,3 +327,166 @@ background: #FD8D14;
     transition: .4s;
     border-radius:  34px;
 } */
+
+
+
+
+
+/* Media Query section to make the footer section responsive */
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+
+    .search-bar { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    /* styles */
+    /* .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; 
+       width: 100vw;
+      
+
+    } */
+
+    /* .welcome {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    } */
+    /* .title-wrapper h2 {
+        font-family: 'Libre Baskerville', serif;
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+        position: relative;
+        left: 0;
+        left: 40px;
+    
+    } */
+.title2 {
+    /* background-color: aqua; */
+
+}
+    .title2 h2 {
+        /* font-family: 'Libre Baskerville', serif; */
+        /* display: flex;
+    justify-content: center; */
+        /* font-size: x-large;
+        position: relative;
+        left: 0; */
+    }
+
+    .title-interest-wrapper {
+        /* display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0; */
+        /* text-align: center; */
+        /* background-color: aquamarine; */
+    }
+
+    .title-interest-wrapper h2  {
+       
+        /* position: relative;
+        bottom: -30px;
+        left: 0px; */
+       
+        /* overflow: hidden; */
+        /* white-space: nowrap; */
+        /* text-overflow: ellipsis; */
+       
+    }
+
+    /* .search-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+
+    /* .search-container {
+        position: relative;
+        right: 0;
+        width: 275px;
+    } */
+
+/* .bar {
+    width: 200px;
+} */
+
+    /* .search-button {
+        position: relative;
+        bottom: -20px;
+        left: -80px;
+    } */
+
+    /* .search-bar label {
+        position: relative;
+        bottom: 45px;
+        left: 60px;
+        width: 135px;
+        height: 55px;
+    } */
+
+    /* .search-bar label:after {
+        width: 50px;
+       height: 50px;
+    } */
+}
+
+
+
+
+
+/* iPad Air  */
+@media only screen and (max-width: 820px){
+    /* 820 */
+    /* .title-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0;
+       
+    
+    }
+
+    .title2 h2 {
+        display: flex;
+    justify-content: center;
+        position: relative;
+        left: 0;
+    }
+
+    .title-interest-wrapper h2  {
+       display: flex;
+       justify-content: center;
+        position: relative;
+        left: 0px;
+    }
+
+    .search-container{
+  position: relative;
+  left: 0;
+    }
+
+    .search-button {
+        position: relative;
+        right: 0px;
+    }
+
+    .search-bar label {
+       position: relative;
+       right: 0;
+    }
+    
+   
+    .search-bar {
+       
+    } */
+
+}

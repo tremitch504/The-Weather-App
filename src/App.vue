@@ -4,43 +4,23 @@ import HeaderWeather from './components/HeaderWeather/HeaderWeather.vue';
 import Weather from './components/Weather/Weather.vue'
 // import Widget from './components/Widget/Widget.vue';
 import TestRun from './components/TestRun/TestRun.vue';
+import WeatherFooter from './components/Footer/WeatherFooter.vue';
 </script>
 
-
-<!-- <script>
-export default {
-    data(){
-       return {
-        city: '',
-        showWeather: false,
-       }
-    },
-    watch: {
-      city(newValue) {
-        console.log("New Value: ", newValue)
-      }
-    },
-    methods: {
-        searchWeather() {
-          this.showWeather = false;
-          this.$nextTick();
-          this.showWeather = true;
-        }
-    },
-   
-}
-
-
-</script> -->
  
+
 <template>
   <!-- Our main app wrapper -->
   <main class="app">
+    <!-- <h1 class="text-3xl font-bold underline bg-red-200 sm:bg-blue-700 md:bg-yellow-400 lg:bg-orange-500">
+    Hello world!
+  </h1> -->
     <NavLogo />
    <HeaderWeather /> 
    <!-- <Weather /> -->
    <!-- <Widget /> -->
    <!-- <TestRun /> -->
+   <WeatherFooter />
 
   </main>
  

@@ -104,17 +104,17 @@ export default {
  
 
             <div class="widget-details">
-                <div>
+                <h1>
                     Wind <span>{{day.wind }} kmph</span>
-                </div>
+                </h1>
 
-                <div>
+                <h1>
                     Humidity <span>{{ day.humidity }}%</span>
-                </div>
+                </h1>
 
-                <div>
+                <h1>
                     Pressure <span>{{ day.pressure }} mb</span>
-                </div>
+                </h1>
             </div>
 
         </div>

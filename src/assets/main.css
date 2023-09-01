@@ -1,12 +1,14 @@
 /* @import './base.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   display: flex;
   flex-direction: center;
   justify-content: center;
   /* text-align: center; */
-  min-height: fit-content;
-  /* overflow-x as hidden avoids our webpage from being scrolled to the right. Instead it will be horizontal  */
+  /* overflow-x as hidden avoids our webpage from being scrolled to the right.  */
   overflow-x: hidden;
   background-color: #FFFFFF !important;
 } 
@@ -15,43 +17,55 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   /* max-width: 1280px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* margin-top: 5rem; */
   padding: 2rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   /* width: 1200px; */
-  min-width: 1400px;
-  min-height: 1000px;
+  min-width: 100%;
+  min-height: 100vh; 
   /* position: relative;
   top: -50px; */
   font-weight: normal;
   background-color: #FFFFFF;
 }
 
-/* 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+/* main, body, #app, html{
+  width: 100vw;
+  height: 100vh;
 } */
 
-/* /* @media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* Media Query section to make the footer section responsive */
+
+/* Mobile */
+@media (max-width: 600px) {
+  /* styles */
+
+  body {
+ /* width: 100vw; */
+  /* overflow-x as hidden avoids our webpage from being scrolled to the right. Instead it will be horizontal  */
+  /* overflow: hidden; */
+  /* background-color: blue !important; */
   }
+  #app {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    /* width: */
+    overflow-x: hidden;
+    /* background-color: orange; */
+  }
+
 }
 
-@media (min-width: 1024px) {
-  /* body {
-    display: flex;
-    place-items: center;
-  } */
 
-  /* #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  } */
-/* }  */
+
+@media (max-width: 1128px) {
+  #app {
+  overflow-x: hidden;
+  }
+
+}
+
