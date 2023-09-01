@@ -3,6 +3,7 @@ import "./Weather.css"
 import DaysOfWeek from '../DaysOfWeek/DaysOfWeek.vue'
 import Widget from '../Widget/Widget.vue';
 import axios from 'axios';
+// import.meta.env.VITE_API_KEY
 // import HeaderWeather from "../HeaderWeather/HeaderWeather.vue"
 </script>
 
@@ -34,7 +35,7 @@ export default {
        
         }
     },
-   mounted() {
+   mounted() { 
       this.getWeather()
     // console.log('current degree: ', this.temperature)
     },
@@ -78,6 +79,7 @@ export default {
        
         searchResult(newValue) {
           console.log('result status: ', newValue);
+         
         },
         temperature(newValue){
             console.log('temp status ', newValue)
@@ -90,7 +92,7 @@ export default {
         }
     }, methods: {
          async getWeather() {
-          await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=112e66de63cb9dd94704577809734305`).then( response => {
+          await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
 
             
 const weatherData = response.data;

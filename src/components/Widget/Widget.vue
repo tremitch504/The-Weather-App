@@ -2,6 +2,8 @@
 import './Widget.css'
 import axios from 'axios';
 import moment from 'moment';
+
+// import API_KEY from 'dotenv' 
 </script>
  
 <script>
@@ -13,7 +15,7 @@ export default {
     },
     data() {
         return {
-            forecast: [],
+            forecast: [], 
             iconUrl: null,
            loading: true,
         }
@@ -23,8 +25,8 @@ export default {
     },
     methods: {
         async fetchDailyData() {
-            const apiKey = '112e66de63cb9dd94704577809734305';
-            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${this.name}&units=metric&appid=${apiKey}`;
+            // const apiKey = API_KEY;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${this.name}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`;
 
             await axios.get(apiUrl).then(res => {
 

@@ -22,7 +22,7 @@ export default {
        }
     },
     mounted() {    
-        
+      console.log('Api Key', import.meta.env.VITE_ACCESS_TOKEN)
     },
     watch: {
       city(newValue) {
