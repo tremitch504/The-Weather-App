@@ -126,7 +126,7 @@ this.searchResult = 'Found';
 }).catch(err => {
 // console.log(err);
 this.searchResult = 'No results found for ';
-this.name = city;
+this.name = this.city;
 })
           }
 
@@ -190,7 +190,7 @@ this.name = city;
 </div>
 </div> 
 
-<Widget  :name="this.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
+<Widget  :name="this?.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
 
 </div>
 
