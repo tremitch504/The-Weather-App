@@ -1,12 +1,12 @@
 <script setup>
 import './HeaderWeather.css';
 import Weather from '../Weather/Weather.vue'
-import TestRun from '../TestRun/TestRun.vue';
-import cities from 'cities.json';
-import citiesData from '../../Cities/citiesData.json'
+// import TestRun from '../TestRun/TestRun.vue';
+// import cities from 'cities.json';
+// import citiesData from '../../Cities/citiesData.json'
 
- import {gql} from "@apollo/client"
-import { useQuery } from '@vue/apollo-composable';
+//  import {gql} from "@apollo/client"
+// import { useQuery } from '@vue/apollo-composable';
 // import {getBooks} from '../../graphql/Queries';
 </script>
 
@@ -89,7 +89,7 @@ export default {
 
         }, 
         async changeTemp(e){
-          console.log(e.target.checked);
+          // console.log(e.target.checked);
           // e.preventDefault()
           // this.tempDegree = 'celsius'; 
           if(e.target.checked === true) {
