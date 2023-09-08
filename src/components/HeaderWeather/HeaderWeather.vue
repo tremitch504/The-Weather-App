@@ -30,40 +30,41 @@ export default {
     },
     watch: {
       city(newValue) {
-        console.log("New Value: ", newValue)
+        // console.log("New Value: ", newValue)
       // console.log(cities); 
         //*****Here we need to use an API to capture cities*****
-        this.listData = citiesData.map(val => {
+//         this.listData = citiesData.map(val => {
 
-          // console.log(val)
-            return {
-              name: val.city
-            }
-          })
+//           // console.log(val)
+//             return {
+//               name: val.city
+//             }
+//           })
         
 
-          const word = newValue;
+//           const word = newValue;
 
-     const newFilter = this.listData.filter((val) => {
-          return val.name.toLowerCase().includes(word.toLowerCase());
-})
-console.log('Filter:', newFilter)
-     if(word === "" || this.isActive === false) {
-      this.filterData = []; 
-      this.isActive = true;
-     } else {
-      this.filterData = newFilter.slice(0,10); 
-     }
+//      const newFilter = this.listData.filter((val) => {
+//           return val.name.toLowerCase().includes(word.toLowerCase());
+// })
+// console.log('Filter:', newFilter)
+//      if(word === "" || this.isActive === false) {
+//       this.filterData = []; 
+//       this.isActive = true;
+//      } else {
+//       this.filterData = newFilter.slice(0,10); 
+//      }
+//       }
       },
       listData(newValue){
         
-        console.log('This is the List of Cities: ', newValue)
+        // console.log('This is the List of Cities: ', newValue)
       },
       filterData(newValue){
-        console.log('New Filter ', newValue)
+        // console.log('New Filter ', newValue)
       },
       tempDegree(newValue){
-        console.log('New Temp ', newValue)
+        // console.log('New Temp ', newValue)
       }
     },
     methods: {
