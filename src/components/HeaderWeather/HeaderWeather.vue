@@ -10,14 +10,14 @@ import Weather from '../Weather/Weather.vue'
 // import {getBooks} from '../../graphql/Queries';
 </script>
 
-<script>
+<script> 
 
 // let props = defineProps(['city']);
 //This is where we will hold and place our state
 export default {
     data(){
        return {
-        city: '',
+        city: 'bhvhv',
         showWeather: false, 
         listData: [],
         filterData: [],
