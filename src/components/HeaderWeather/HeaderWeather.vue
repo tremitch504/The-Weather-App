@@ -17,7 +17,6 @@ import Weather from '../Weather/Weather.vue'
 export default {
     data(){
        return {
-        myLife: '',
         city: '',
         showWeather: false, 
         listData: [],
