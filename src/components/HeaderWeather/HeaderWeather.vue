@@ -4,6 +4,10 @@ import Weather from '../Weather/Weather.vue'
 import TestRun from '../TestRun/TestRun.vue';
 import cities from 'cities.json';
 import citiesData from '../../Cities/citiesData.json'
+
+ import {gql} from "@apollo/client"
+import { useQuery } from '@vue/apollo-composable';
+// import {getBooks} from '../../graphql/Queries';
 </script>
 
 <script>
@@ -98,13 +102,13 @@ console.log('Filter:', newFilter)
         this.showWeather = false;
           await this.$nextTick();
         this.showWeather = true; 
-      }
+      },
 
     },
-   
+    
 }
 </script>
-
+ 
 <template>
 <div class="header-wrapper">
 

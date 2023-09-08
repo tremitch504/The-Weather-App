@@ -3,8 +3,6 @@ import "./Weather.css"
 import DaysOfWeek from '../DaysOfWeek/DaysOfWeek.vue'
 import Widget from '../Widget/Widget.vue';
 import axios from 'axios';
-// import.meta.env.VITE_API_KEY
-// import HeaderWeather from "../HeaderWeather/HeaderWeather.vue"
 </script>
 
 <script>
@@ -92,7 +90,8 @@ export default {
         }
     }, methods: {
          async getWeather() {
-          await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
+
+    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
 
             
 const weatherData = response.data;
@@ -129,8 +128,6 @@ console.log(err);
 this.searchResult = 'No results found for ';
 this.name = this.city;
 })
-
-
           }
 
         ,
