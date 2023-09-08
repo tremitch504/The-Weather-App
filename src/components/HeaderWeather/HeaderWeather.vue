@@ -176,6 +176,6 @@ export default {
 <Weather :city="this?.city" :tempDegree="tempDegree" v-if="showWeather"/>
 
 
-
+ 
 
 </template>
