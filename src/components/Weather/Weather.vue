@@ -76,11 +76,11 @@ export default {
     watch: {
        
         searchResult(newValue) {
-          console.log('result status: ', newValue);
+        //   console.log('result status: ', newValue);
          
         },
         temperature(newValue){
-            console.log('temp status ', newValue)
+            // console.log('temp status ', newValue)
             // console.log('degree: ', this.tempDegree)
             // if(this.tempDegree === 'celsius') { 
             //     this.temperature = Math.round((newValue - 32) * 5 / 9);
@@ -124,7 +124,7 @@ this.searchResult = 'Found';
 // console.log('current Degree ', this.temperature);
 console.log(response);
 }).catch(err => {
-console.log(err);
+// console.log(err);
 this.searchResult = 'No results found for ';
 this.name = this.city;
 })

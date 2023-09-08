@@ -42,7 +42,7 @@ export default {
                       console.log('current degree:', this.tempDegree)
                     if(this.tempDegree === 'celsius') {
                         temp = Math.round(day.main.temp);
-                        console.log('current temp:', temp);
+                        // console.log('current temp:', temp);
                     }
                     //  console.log('current temp: ', temp);
                     if(this.tempDegree === 'fahrenheit') {
@@ -67,10 +67,10 @@ export default {
 
                   this.forecast = filterData;
                   this.loading = false;
-                console.log(forecastData, "This is the Original !!");
-                console.log(filterData, "This is the Filter!!");
+                // console.log(forecastData, "This is the Original !!");
+                // console.log(filterData, "This is the Filter!!");
             }).catch(error => {
-                console.log(error)
+                // console.log(error)
                 this.loading = false;
             });
         },

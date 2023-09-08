@@ -26,12 +26,12 @@ export default {
        }
     },
     mounted() {    
-      console.log('Api Key', import.meta.env.VITE_ACCESS_TOKEN)
+      // console.log('Api Key', import.meta.env.VITE_ACCESS_TOKEN)
     },
     watch: {
       city(newValue) {
         console.log("New Value: ", newValue)
-      console.log(cities); 
+      // console.log(cities); 
         //*****Here we need to use an API to capture cities*****
         this.listData = citiesData.map(val => {
 

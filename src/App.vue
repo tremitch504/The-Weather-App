@@ -1,9 +1,6 @@
 <script setup>
 import NavLogo from './components/Nav/NavLogo.vue';
 import HeaderWeather from './components/HeaderWeather/HeaderWeather.vue';
-import Weather from './components/Weather/Weather.vue'
-// import Widget from './components/Widget/Widget.vue';
-import TestRun from './components/TestRun/TestRun.vue';
 import WeatherFooter from './components/Footer/WeatherFooter.vue';
 </script>
 
@@ -17,9 +14,6 @@ import WeatherFooter from './components/Footer/WeatherFooter.vue';
   </h1> -->
     <NavLogo />
    <HeaderWeather /> 
-   <!-- <Weather /> -->
-   <!-- <Widget /> -->
-   <!-- <TestRun /> -->
    <WeatherFooter />
 
   </main>
