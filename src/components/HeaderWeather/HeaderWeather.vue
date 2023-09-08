@@ -17,6 +17,7 @@ import Weather from '../Weather/Weather.vue'
 export default {
     data(){
        return {
+        myLife: '',
         city: '',
         showWeather: false, 
         listData: [],
@@ -172,7 +173,7 @@ export default {
 
 
 <!-- place Weather section here -->
-<!-- <Weather :city="city" :tempDegree="tempDegree" v-if="showWeather"/> -->
+<Weather :city="city" :tempDegree="tempDegree" v-if="showWeather"/>
 
 
 
