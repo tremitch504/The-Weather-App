@@ -142,10 +142,10 @@ export default {
           <!-- this could possibly what is causing the typeError problem  -->
         <i class="bi bi-search" v-if="this?.city.length === 0"></i> 
         <i class="bi bi-x-circle" v-if="this?.city.length !== 0" v-on:click="clearInput"></i>
-          <input class="bar" type="text" v-on:@keyup.enter="searchWeather" v-model="this.city" v-on:change="filterHandle" placeholder="Search for a city"  autocomplete="off">
+          <input class="bar" type="text" v-on:@keyup.enter="searchWeather" v-model="city" v-on:change="filterHandle" placeholder="Search for a city"  autocomplete="off">
         </form>   
     </div>  
-     
+      
     <div class="button-wrapper">
       <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
  
