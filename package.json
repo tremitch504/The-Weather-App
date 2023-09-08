@@ -25,6 +25,7 @@
     "cities.json": "^1.1.23",
     "dotenv": "^16.3.1",
     "dotenv-webpack": "^8.0.1",
+    "git-cli": "^0.11.0",
     "graphql": "^15.8.0",
     "graphql-tag": "^2.12.6",
     "graphql-type-json": "^0.3.2",

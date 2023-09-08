@@ -29,7 +29,7 @@ export default {
       // console.log('Api Key', import.meta.env.VITE_ACCESS_TOKEN)
     },
     watch: {
-      city(newValue) {
+      // city(newValue) {
         // console.log("New Value: ", newValue)
       // console.log(cities); 
         //*****Here we need to use an API to capture cities*****
@@ -55,7 +55,7 @@ export default {
 //       this.filterData = newFilter.slice(0,10); 
 //      }
 //       }
-      },
+      // },
       listData(newValue){
         
         // console.log('This is the List of Cities: ', newValue)
