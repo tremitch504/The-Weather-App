@@ -172,7 +172,7 @@ export default {
 
 
 <!-- place Weather section here -->
-<Weather :city="city" :tempDegree="tempDegree" v-if="showWeather"/>
+<!-- <Weather :city="this.city" :tempDegree="tempDegree" v-if="showWeather"/> -->
 
 
 
