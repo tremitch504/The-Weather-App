@@ -126,7 +126,7 @@ this.searchResult = 'Found';
 }).catch(err => {
 // console.log(err);
 this.searchResult = 'No results found for ';
-this.name = this.city;
+this.name = city;
 })
           }
 
