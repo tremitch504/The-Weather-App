@@ -39,7 +39,7 @@ export default {
                 const filterData = forecastData.map(day => {
                    
                     let temp;
-                      console.log('current degree:', this.tempDegree)
+                    //   console.log('current degree:', this.tempDegree)
                     if(this.tempDegree === 'celsius') {
                         temp = Math.round(day.main.temp);
                         // console.log('current temp:', temp);

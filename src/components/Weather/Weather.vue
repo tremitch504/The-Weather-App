@@ -122,7 +122,7 @@ this.date = d.getDate() + ' ' + this.monthNames[d.getMonth()] + ' ' + d.getFullY
    
 this.searchResult = 'Found';
 // console.log('current Degree ', this.temperature);
-console.log(response);
+// console.log(response);
 }).catch(err => {
 // console.log(err);
 this.searchResult = 'No results found for ';
