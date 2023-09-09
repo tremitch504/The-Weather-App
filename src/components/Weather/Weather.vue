@@ -152,7 +152,7 @@ this.name = this.city;
 <!-- padding 0 -->
 <div class="weather-wrapper" >    
 
-    <div class="no-search-wrapper" v-if="this.searchResult === 'No results found for '">
+    <div class="no-search-wrapper" v-if="this?.searchResult === 'No results found for '">
      <div class="no-search-container">
         <i class="bi bi-search"></i> 
      <h2>No Results</h2>
@@ -162,7 +162,7 @@ this.name = this.city;
 
 
     <!-- display of flex -->
-<div class="weather-container" v-if="this.searchResult === 'Found'">
+<div class="weather-container" v-if="this?.searchResult === 'Found'">
     <!-- width of 100 -->
 <div class="weather-card">
     <!-- padding of 3 -->
