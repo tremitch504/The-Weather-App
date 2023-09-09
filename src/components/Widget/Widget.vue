@@ -26,7 +26,7 @@ export default {
     methods: {
         async fetchDailyData() {
             // const apiKey = API_KEY;
-            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${this.name}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${this?.name}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`;
 
             await axios.get(apiUrl).then(res => {
 
