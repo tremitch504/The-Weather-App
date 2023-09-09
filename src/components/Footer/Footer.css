@@ -1,7 +1,20 @@
 /* #272829 */
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+
+
+/* @layer components {
+
+    .footer-wrapper {
+         @apply mt-0
+    }
+      
+
+} */
 
 /* { */
     /* margin: 0;
@@ -25,7 +38,7 @@
     /* min-height: 100vh; */
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
-    /* padding: 50px; */
+    padding: 40px;
     background: #272829;
 }
 
@@ -138,9 +151,10 @@ position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    /* position: rel; */
-    /* bottom: 0;   */
-    /* left: 0; */
+        /* margin-top: auto; */
+    /* position: relative; 
+    bottom: 0;  
+     left: 0; */
     }
 
     .footer-container {
