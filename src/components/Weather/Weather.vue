@@ -96,7 +96,7 @@ export default {
 
             
 const weatherData = response.data;
-
+ 
 //If the toggle checked as celsius, return the temperature as celsius.
 if(this.tempDegree === 'celsius') {
     this.temperature = Math.round(weatherData.main.temp)
