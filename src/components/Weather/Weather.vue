@@ -192,7 +192,7 @@ this.name = this?.city;
 </div>
 </div> 
 
-<Widget  :name="this.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
+<Widget  :name="city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
 
 </div>
 
