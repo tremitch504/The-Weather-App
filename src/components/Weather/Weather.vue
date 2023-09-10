@@ -93,8 +93,7 @@ export default {
     }, methods: {
         async getWeather() {
 console.log(this.city)
-const city = this.city;
-await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
+await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
 
             
 const weatherData = response.data;
@@ -193,7 +192,7 @@ this.name = this?.city;
 </div>
 </div> 
 
-<Widget  :name="this?.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
+<Widget  :name="city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
 
 </div>
 
