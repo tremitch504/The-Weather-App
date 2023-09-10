@@ -22,6 +22,7 @@ export default {
     },
     mounted() {
         this.fetchDailyData();
+        console.log()
     },
     methods: {
         async fetchDailyData() {
@@ -101,7 +102,7 @@ export default {
 
             <div class="right-side">
                 <h5 class="day">{{ getNameDay(day.date) }}</h5>
-                <h5 class="degree">{{ day.temperature }}&#176;{{ this.degreeLetter }}</h5>
+                <h5 class="degree">{{ day.temperature }}&#176;{{ degreeLetter }}</h5>
             </div>
  
 
@@ -110,7 +111,7 @@ export default {
                     Wind <span>{{day.wind }} kmph</span>
                 </h1>
 
-                <h1>
+                <h1> 
                     Humidity <span>{{ day.humidity }}%</span>
                 </h1>
 
