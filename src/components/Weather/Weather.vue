@@ -36,7 +36,7 @@ export default {
    mounted() { 
       this.getWeather()
       console.log(import.meta.env.VITE_ACCESS_TOKEN)
-      console.log(this.city);
+    //   console.log(this.city);
     // console.log('current degree: ', this.temperature)
     },
 //    async created() {    //This is where we will do a axios request to capture data from the Weather API Open Weather Map. But search on how we can use GraphQl
@@ -91,9 +91,10 @@ export default {
             //  console.log('new Temp ', this.temperature);
         }
     }, methods: {
-         async getWeather() {
+        async getWeather() {
+console.log(this.city)
 
-    await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
+await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`).then( response => {
 
             
 const weatherData = response.data;
