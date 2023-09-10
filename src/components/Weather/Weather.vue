@@ -154,17 +154,17 @@ this.name = this?.city;
 <!-- padding 0 -->
 <div class="weather-wrapper" >    
 
-    <div class="no-search-wrapper" v-if="this?.searchResult === 'No results found for '">
+    <div class="no-search-wrapper" v-if="searchResult === 'No results found for '">
      <div class="no-search-container">
         <i class="bi bi-search"></i> 
      <h2>No Results</h2>
-     <h1 class="no-search-text">{{ this.searchResult + `"${this.name}"`}}</h1>
+     <h1 class="no-search-text">{{ searchResult + `"${this.name}"`}}</h1>
      </div>
     </div>
 
 
     <!-- display of flex -->
-<div class="weather-container" v-if="this?.searchResult === 'Found'">
+<div class="weather-container" v-if="searchResult === 'Found'">
     <!-- width of 100 -->
 <div class="weather-card">
     <!-- padding of 3 -->
@@ -192,7 +192,7 @@ this.name = this?.city;
 </div>
 </div> 
 
-<Widget  :name="city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
+<Widget  :name="this.city" :tempDegree="tempDegree" :degreeLetter="degreeLetter"/>
 
 </div>
 
