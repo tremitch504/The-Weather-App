@@ -158,8 +158,8 @@ this.name = this?.city;
      <div class="no-search-container">
         <i class="bi bi-search"></i> 
      <h2>No Results</h2>
-     <h1 class="no-search-text">{{ searchResult + `"${this.name}"`}}</h1>
-     </div>
+     <h1 class="no-search-text">{{ searchResult + `"${name}"`}}</h1>
+     </div> 
     </div>
 
 
