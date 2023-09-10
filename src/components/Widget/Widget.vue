@@ -100,7 +100,7 @@ export default {
                 
 
             <div class="right-side">
-                <h5 class="day">{{ this.getNameDay(day.date) }}</h5>
+                <h5 class="day">{{ getNameDay(day.date) }}</h5>
                 <h5 class="degree">{{ day.temperature }}&#176;{{ this.degreeLetter }}</h5>
             </div>
  
