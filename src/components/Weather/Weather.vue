@@ -186,7 +186,19 @@ this.name = this?.city;
         <img class='icon-url' :src="iconUrl" />
         <!-- color is text-light -->       
         <h2 class="description">{{ description }}  </h2> 
-       
+    <div class="weather-details">
+        <h1>
+                    Wind <span>{{wind}} kmph</span>
+                </h1>
+
+                <h1> 
+                    Humidity <span>{{humidity}}%</span>
+                </h1>
+
+                <h1>
+                    Pressure <span>{{pressure}} mb</span>
+                </h1>
+    </div>
     </div>        
 </div>  
 </div>

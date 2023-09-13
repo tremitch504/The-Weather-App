@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
   /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* margin-top: 5rem; */
@@ -28,6 +28,7 @@ body {
   min-height: 100vh; 
   /* position: relative;
   top: -50px; */
+  /* overflow-x: hidden; */
   font-weight: normal;
   background-color: #FFFFFF;
 }

@@ -16,7 +16,10 @@
     .nav h1 {
         @apply font-serif text-xl
     }
-
+     
+  .nav img {
+    @apply h-8 
+  }
 }
 
 

@@ -43,12 +43,19 @@
    
 }
 
+.day {
+    @apply pl-4 
+}
 .temp {
     @apply flex flex-col items-center
 }
 
 .place-container{
     @apply flex justify-center
+}
+
+.weather-details {
+    /* @apply w-48 */
 }
 }
 
@@ -98,6 +105,25 @@
     z-index: 1;
 }
 
+.weather-details {
+    width: 400px;
+    /* position: relative;
+    bottom: 135px;
+     left: 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: #fff;
+    /* background-color: aqua; */
+    }
+ 
+.weather-details h1 {
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    line-height: 100%; 
+    font-size: 0.83em;
+    text-shadow: 1px 1px 5px #707070;
+}
 /* .temp {
     position: absolute;
     bottom: 0;
@@ -245,6 +271,17 @@
         font-size: 100%;
         padding-left: 6rem;
     }
+
+
+    .weather-details {
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    gap: 2rem;
+        }
+
+
     /* We had to change the height of weather so that the footer can be placed below at bottom */
    
     /* .weather-wrapper {
