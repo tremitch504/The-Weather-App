@@ -7,7 +7,7 @@
  
 <!-- here: have the table of contents: a logo infront the the name of content we show. -->
 # Table Of Contents
-⚡️[Features](https://github.com/tremitch504/The-Weather-App#features)
+⚡️[Features](https://github.com/tremitch504/The-Weather-App#features)<br />
 🔥[Stack](https://github.com/tremitch504/The-Weather-App#Tech-Stack)
 
 
