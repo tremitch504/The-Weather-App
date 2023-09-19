@@ -12,10 +12,10 @@
 
 
 # Features
-
+<!-- here: Show the website in full screen version screenshot -->
+<img  src="/public/TheWeatherAppFS.png">
 Where  my features will be
 
-<!-- here: Show the website in full screen version screenshot
 
 here: descriping a feature of using the weather App
 
@@ -30,7 +30,7 @@ Here: we show the responsive ness video of the phone screen explaining we used T
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
 
 
-Here: explaining the documentation of the Weather API we used! -->
+Here: explaining the documentation of the Weather API we used!
 
 
 
