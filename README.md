@@ -1,5 +1,5 @@
 <!-- First The App logo and This is where the name of the Website should be -->
-# <img class="weather-icon" src="/public/weather-app.png"> The Weather App
+# <img style="height: 50px;" src="/public/weather-app.png"> The Weather App
  
 Underneath, we will have the description of our website, explaninng 
 
