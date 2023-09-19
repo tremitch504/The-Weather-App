@@ -8,14 +8,14 @@
 <!-- here: have the table of contents: a logo infront the the name of content we show. -->
 # Table Of Contents
 ⚡️[Features](https://github.com/tremitch504/The-Weather-App#features)
+🔥[Stack](https://github.com/tremitch504/The-Weather-App#Tech-Stack)
 
 
 
-# Features
+# ⚡️Features
 <!-- here: Show the website in full screen version screenshot -->
-<div style="border-radius: 20px;">
 <img src="/public/TheWeatherAppFS.png">
-</div>
+
 Where  my features will be
 
 
@@ -23,6 +23,7 @@ here: descriping a feature of using the weather App
 
 here: a gif of the weather App using those features, example: searching for a City!
 
+# 🔥Teach Stack
 Here: We would display the Tech Stack and its logos!
 
 Here explain what the tech was used for this website!
