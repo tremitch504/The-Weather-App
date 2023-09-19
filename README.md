@@ -1,7 +1,10 @@
 <!-- First The App logo and This is where the name of the Website should be -->
 # <img style="height: 60px;" src="/public/weather-app.png"> The Weather App
  
-Underneath, we will have the description of our website, explaninng 
+<!-- Underneath, we will have the description of our website, explaninng  -->
+<img style="height: 45px;" src="/public/weather-app.png">The Weather App is a website that provides users the best and real time forecast. Users can be  updated on present or upcoming days for current location or future destinations.  This App is built with Vue as the frontend framework and Vite for the built in local server and build or bundle the assests.
+
+
 
 here: have the table of contents: a logo infront the the name of content we show.
 
