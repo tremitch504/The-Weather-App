@@ -7,7 +7,12 @@
 <!-- here: have the table of contents: a logo infront the the name of content we show. -->
 ⚡️[Features](https://github.com/tremitch504/The-Weather-App#features)<br /> 
 
-🔥[Stack](https://github.com/tremitch504/The-Weather-App#Tech-Stack)
+🔥[Stack](https://github.com/tremitch504/The-Weather-App#Tech-Stack)<br /> 
+
+📖[Documentation](https://github.com/tremitch504/The-Weather-App#Documentation)<br /> 
+
+
+
 
 
 
@@ -29,6 +34,7 @@ Here explain what the tech was used for this website!
 
 Here: we show the responsive ness video of the phone screen explaining we used Tailwind
 
+# 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
 
 
