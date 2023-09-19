@@ -13,7 +13,9 @@
 
 # Features
 <!-- here: Show the website in full screen version screenshot -->
-<img  style="border-radius: 20px;" src="/public/TheWeatherAppFS.png">
+<div style="border-radius: 20px;">
+<img src="/public/TheWeatherAppFS.png">
+</div>
 Where  my features will be
 
 
