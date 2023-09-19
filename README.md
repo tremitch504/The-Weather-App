@@ -2,13 +2,18 @@
 # <img style="height: 60px;" src="/public/weather-app.png"> The Weather App
  
 <!-- Underneath, we will have the description of our website, explaninng  -->
-<img style="height: 20px;" src="/public/weather-app.png">The Weather App is a website that provides users the best and real time forecast. Users can be  updated on present or upcoming days for current location or future destinations.  This App is built with Vue as the frontend framework and Vite for the built in local server and build or bundle the assests.
+<img style="height: 20px;" src="/public/weather-app.png">The Weather App is a website that provides users the best and real time forecast. Users can be  updated on present or upcoming days for current location or future destinations.  This app is built with Vue as the frontend framework and Vite for the built in local server and build or bundle the assests.
 
  
+<!-- here: have the table of contents: a logo infront the the name of content we show. -->
+# Table Of Contents
+⚡️[Features](https://github.com/tremitch504/The-Weather-App#features)
 
-here: have the table of contents: a logo infront the the name of content we show.
 
-here: Show the website in full screen version screenshot
+
+#Features
+
+<!-- here: Show the website in full screen version screenshot
 
 here: descriping a feature of using the weather App
 
@@ -23,7 +28,7 @@ Here: we show the responsive ness video of the phone screen explaining we used T
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
 
 
-Here: explaining the documentation of the Weather API we used!
+Here: explaining the documentation of the Weather API we used! -->
 
 
 
