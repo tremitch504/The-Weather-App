@@ -23,8 +23,11 @@
 <ul>
 <li>A user have the ability to search for any city globally worldwide to capture current and future forecast using the search bar</li>
 <li>Once the city has been searched, the user will be presented with a display of a widget with current day's weather forecast along with the date and the city that the user have searched</li>
+<li>Also displayed are widgets of weather conditions for the next four days for that particular city</li>
 </ul>
 
+
+![](../The-Weather-App/public/weatherAppFS.GIF)
 
 here: descriping a feature of using the weather App
 
