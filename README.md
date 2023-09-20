@@ -23,8 +23,8 @@
 
     
     
-<img src="/public/weatherAppFS.GIF" style="width: 200%;">
-![](/public/weatherAppFS.GIF | width=100)
+<img src="/public/weatherAppFS.GIF" style="width: 200%; height: 100%;">
+<!-- ![](/public/weatherAppFS.GIF | width=100) -->
 <ul>
 <li>Each widget displays the Wind, Humidity percentage, Pressure and Temperature of that day </li>
 
