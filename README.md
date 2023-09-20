@@ -35,8 +35,6 @@
  </ul>
 
  
-![](/public/weatherAppDemo.mov)
- 
 here: descriping a feature of using the weather App
 
 here: a gif of the weather App using those features, example: searching for a City!
