@@ -17,7 +17,7 @@
 
 
 # ⚡️Features
-<!-- here: Show the website in full screen version screenshot -->
+<!-- here: Show the website in full screen version screenshot --> 
 <img src="/public/TheWeatherAppFS.png">
 
 <ul>
