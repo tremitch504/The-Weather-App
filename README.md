@@ -33,7 +33,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
 
 <li>At default a user will see the Temperature degree at Fahrenheit but have the ability to change and show Temperature in Celcius</li>
  </ul>
- 
+  
 <!-- This where we would have a gif or video of the celcius change  -->
 ![](https://res.cloudinary.com/dbylrb5vl/video/upload/v1695219378/weatherAppDemo_vadjep.mov)
 
