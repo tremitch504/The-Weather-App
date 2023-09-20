@@ -21,8 +21,8 @@
 <li>Also displayed are widgets of weather conditions for the next four days for that particular city</li>
 </ul>
 
-   
-![](/public/weatherAppFS.GIF)
+    
+![](/public/weatherAppFS.GIF || width=100)
 <ul>
 <li>Each widget displays the Wind, Humidity percentage, Pressure and Temperature of that day </li>
 
