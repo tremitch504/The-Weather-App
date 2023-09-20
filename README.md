@@ -32,7 +32,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
 <li>Each widget displays the Wind, Humidity percentage, Pressure and Temperature of that day </li>
 
 <li>At default a user will see the Temperature degree at Fahrenheit but have the ability to change and show Temperature in Celcius</li>
- </ul>
+ </ul> 
   
 <!-- This where we would have a gif or video of the celcius change  -->
 
