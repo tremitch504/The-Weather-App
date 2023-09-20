@@ -51,6 +51,7 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" style="height: 80px;"/>
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height: 80px;"/>
+<img src="https://miro.medium.com/v2/resize:fit:2400/2*zopSONYY0BgrN1xJJrmW6g.png" style="height: 80px;"/>
 </div>
 Here explain what the tech was used for this website!
 
