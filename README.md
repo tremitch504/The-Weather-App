@@ -22,19 +22,21 @@
 </ul>
 
     
+<!--  
+here: descriping a feature of using the weather App
+
+here: a gif of the weather App using those features, example: searching for a City! -->
     
 <img src="/public/weatherAppFS.GIF" style="width: 200%; height: 100%;">
-<!-- ![](/public/weatherAppFS.GIF | width=100) -->
 <ul>
 <li>Each widget displays the Wind, Humidity percentage, Pressure and Temperature of that day </li>
 
 <li>At default a user will see the Temperature degree at Fahrenheit but have the ability to change and show Temperature in Celcius</li>
  </ul>
  
- 
-here: descriping a feature of using the weather App
+<!-- This where we would have a gif or video of the celcius change  -->
 
-here: a gif of the weather App using those features, example: searching for a City!
+
 
 # 🔥Teach Stack
 Here: We would display the Tech Stack and its logos!
