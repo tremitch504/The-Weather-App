@@ -34,7 +34,7 @@
 <li>At default a user will see the Temperature degree at Fahrenheit but have the ability to change and show Temperature in Celcius</li>
  </ul>
 
-
+ 
 <video width="320" height="240" controls>
   <source src="/public/weatherAppFSdemo.mov" type="video/mp4">
 </video>
