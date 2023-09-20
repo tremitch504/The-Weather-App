@@ -43,15 +43,7 @@ Here: we show the responsive ness video of the phone screen explaining we used T
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
- 
- 
 Here: explaining the documentation of the Weather API we used!
-
-
-
-
-
-
 
 
 
