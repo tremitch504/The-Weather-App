@@ -35,7 +35,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
  </ul>
   
 <!-- This where we would have a gif or video of the celcius change  -->
-![](https://res.cloudinary.com/dbylrb5vl/video/upload/v1695219378/weatherAppDemo_vadjep.mov)
+![](/public/weatherAppDemo.mp4)
 
 
 # 🔥Teach Stack
