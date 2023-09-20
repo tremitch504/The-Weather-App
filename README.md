@@ -35,9 +35,7 @@
  </ul>
 
  
-<video width="320" height="240" controls>
-  <source src="/public/weatherAppFSdemo.mov" type="video/mp4">
-</video>
+![](/public/weatherAppFSdemo.mov)
 
 here: descriping a feature of using the weather App
 
