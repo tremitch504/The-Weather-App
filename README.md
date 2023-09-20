@@ -35,7 +35,7 @@
  </ul>
 
  
-![](/public/weatherAppFSdemo.mov)
+![](/public/weatherAppDemo.mov)
 
 here: descriping a feature of using the weather App
 
