@@ -11,7 +11,6 @@
 
 📖[Documentation](https://github.com/tremitch504/The-Weather-App#Documentation)<br /> 
 
-
 # ⚡️Features
 <!-- here: Show the website in full screen version screenshot --> 
 <img src="/public/TheWeatherAppFS.png">
@@ -22,7 +21,7 @@
 <li>Also displayed are widgets of weather conditions for the next four days for that particular city</li>
 </ul>
 
-
+  
 ![](/public/weatherAppFS.GIF)
 <ul>
 <li>Each widget displays the Wind, Humidity percentage, Pressure and Temperature of that day </li>
