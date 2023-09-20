@@ -36,6 +36,10 @@ here: a gif of the weather App using those features, example: searching for a Ci
   
 <!-- This where we would have a gif or video of the celcius change  -->
 
+
+https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-4784-9a06-6f0e6d690f5c
+
+
 <!-- <video controls>
   <source src="/public/weatherAppDemo.mp4" type="video/mp4">
 </video> -->
