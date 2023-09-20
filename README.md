@@ -28,7 +28,7 @@
 
 <li>At default a user will see the Temperature degree at Fahrenheit but have the ability to change and show Temperature in Celcius</li>
  </ul>
-
+ 
  
 here: descriping a feature of using the weather App
 
