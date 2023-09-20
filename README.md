@@ -11,7 +11,7 @@
 
 📖[Documentation](https://github.com/tremitch504/The-Weather-App#Documentation)<br /> 
 
-# ⚡️Features
+# ⚡️Features 
 <!-- here: Show the website in full screen version screenshot --> 
 <img src="/public/TheWeatherAppFS.png">
 
