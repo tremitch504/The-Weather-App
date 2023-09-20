@@ -35,7 +35,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
  </ul>
   
 <!-- This where we would have a gif or video of the celcius change  -->
-<video width="100" height="150" controls>
+<video controls>
   <source src="/public/weatherAppDemo.mp4" type="video/mp4">
 </video>
 
