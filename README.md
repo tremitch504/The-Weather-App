@@ -39,7 +39,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
 
 https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-4784-9a06-6f0e6d690f5c
 
-# 🔥Teach Stack
+# 🔥Tech Stack
 <!-- Here: We would display the Tech Stack and its logos! -->
 <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 3rem;">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" style="height: 80px;"/>
