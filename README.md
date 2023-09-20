@@ -41,7 +41,7 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 
 # 🔥Teach Stack
 <!-- Here: We would display the Tech Stack and its logos! -->
-<div style="display: flex; flex-direction: column; justify-content: space-between; padding-left: 3rem;">
+<div style="display: flex; flex-direction: column; justify-content: space-between; padding: 3rem;">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" style="height: 50px;"/>
 
 <img src="https://www.svgrepo.com/show/374167/vite.svg" style="height: 50px;"/>
