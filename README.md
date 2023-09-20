@@ -27,7 +27,7 @@
 </ul>
 
 
-![](/public/weatherAppFS.GIF.gif)
+![](/public/weatherAppFS.GIF)
  
 here: descriping a feature of using the weather App
 
