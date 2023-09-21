@@ -11,7 +11,9 @@
 
 📖[Documentation](https://github.com/tremitch504/The-Weather-App#Documentation)<br /> 
 
-[Setup](https://github.com/tremitch504/The-Weather-App#Project-Setup)<br /> 
+👾[Setup](https://github.com/tremitch504/The-Weather-App#Project-Setup)<br /> 
+
+📌[Helpful links](https://github.com/tremitch504/The-Weather-App#Helpful-links)<br /> 
 
 # ⚡️Features 
 <!-- here: Show the website in full screen version screenshot --> 
@@ -142,7 +144,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-# Project Setup
+# 👾Project Setup
 
 ```sh
 npm install
@@ -166,7 +168,7 @@ npm run build
 npm run lint
 ```
 
-# Helpful links
+# 📌Helpful links
 
 <ul> 
 <li> </li>
