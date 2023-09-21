@@ -41,6 +41,10 @@ here: a gif of the weather App using those features, example: searching for a Ci
 <!-- This where we would have a gif or video of the celcius change  -->
 
 
+https://github.com/tremitch504/The-Weather-App/assets/51865741/72b87239-c738-4394-966b-5570ea40ed2a
+
+
+
 # 🔥Tech Stack
 <!-- Here: We would display the Tech Stack and its logos! -->
 <div style="display: flex; flex-direction: column; justify-content: space-between; padding: 3rem;">
