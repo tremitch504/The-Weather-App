@@ -15,12 +15,12 @@ import './Footer.css';
 <h2>About Us</h2>
 <p>We give our visitors the best results of the global forecast and 
 weather condidtions that are happening now in real time. It is our duty to 
-make sure you know what is going outside and aware of any future unpleasant 
-or harm weather in the atmosphere, outside of your location, or upcoming destination.</p>
+make sure you know what is going on outside and aware of any future unpleasant 
+or harmful weather in the atmosphere, outside of your location, or upcoming destinations.</p>
 
 <ul class="about-us-links">
 <li><a href="https://twitter.com/trevonjmitch" target='_blank' rel="noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
-<li><a href="https://github.com/tremitch504" target='_blank' rel="noreferrer"><i class="fa-brands fa-github"></i></a></li>
+<li><a href="https://github.com/tremitch504/The-Weather-App" target='_blank' rel="noreferrer"><i class="fa-brands fa-github"></i></a></li>
 <li><a href="https://www.linkedin.com/in/tre-mitch/" target='_blank' rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
 </ul>
 </div>
