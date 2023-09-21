@@ -119,7 +119,7 @@ Under the API tab next to Guide, you will see different options of data collecti
 
 There are a few ways on how you can do an API call to a collection, you can call by city name or city name, state code and country code.
 
-<img src="/public/apiCall.png" style="height: 30%; width: 50%;" />
+<img src="/public/apiCall.png" style="height: 70%; width: 70%;" />
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
