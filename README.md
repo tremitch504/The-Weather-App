@@ -70,6 +70,8 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 https://github.com/tremitch504/The-Weather-App/assets/51865741/fd0dc9a6-7e52-4730-b999-7fc111dba206
 
 ### TailwindCSS Funtions and Directives
+
+[TailwindCSS Docs](https://tailwindcss.com/docs/functions-and-directives).
 ```sh
 @tailwind base;
 @tailwind components;
@@ -82,6 +84,8 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/fd0dc9a6-7e52-473
 }
 ```
 ### CSS Media Queries 
+
+Checkout [Using Media Queries for CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
 
 ```sh
 
@@ -96,6 +100,7 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/fd0dc9a6-7e52-473
     }
 }
 ```
+
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
