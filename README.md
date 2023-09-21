@@ -54,11 +54,13 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height: 80px;"/>
 <img src="https://miro.medium.com/v2/resize:fit:2400/2*zopSONYY0BgrN1xJJrmW6g.png" style="height: 80px;"/>
+<img src="https://www.futuromediagroup.org/wp-content/uploads/2022/11/FM_News_500-2.png" style="height: 80px;"/>
 </div>
 <!-- Here explain what the tech was used for this website! -->
 <ul> 
 <li>TailwindCSS: For a responsive website, this CSS framework gives <img style="height: 20px;" src="/public/weather-app.png">The Weather App a more flexible style for the content when users are visiting the app on a much smaller device than the browser on a computer</li>
 <li>OpenWeatherMap: An open source service that provides weather data via API, <img style="height: 20px;" src="/public/weather-app.png">The Weather App captures all weather data from OpenWeatherMap</li>
+<li>Axios: Axios is a Javascript library used to make HTTP requests from node. js. Axios is used for the API calls to get data back from OpenWeatherMap's API endpoint</li>
 </ul>
 
 
