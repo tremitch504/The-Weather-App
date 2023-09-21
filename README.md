@@ -108,7 +108,7 @@ Checkout [Using Media Queries for CSS](https://developer.mozilla.org/en-US/docs/
 Once signed up, in your account's My API Keys you are giving a default key.
 You can either use the default key or create a new one. 
 
-<img src="https://i0.wp.com/techtutorialsx.com/wp-content/uploads/2018/03/openweathermap-api-key.png?resize=998%2C562&ssl=1" style="height: 60%;"/>
+<img src="https://i0.wp.com/techtutorialsx.com/wp-content/uploads/2018/03/openweathermap-api-key.png?resize=998%2C562&ssl=1" style="height: 40%;"/>
 
 
 
