@@ -131,13 +131,13 @@ You can either use the default key or create a new one.
 # 📖Documentation
 <!-- Here: We have the documentation what have to be installed and files created in order to use that stack if needed. -->
 <!-- Examples and commands to get Vue and Vite setup -->
- ### Vue + Vite
- To start buuilding a Vite + Vue project run the following command:
+ ### Vite + Vue <img src="https://www.svgrepo.com/show/374167/vite.svg" style="height: 55px;"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" style="height: 55px;"/> 
+ To start building a Vite + Vue project run the following command:
 
 ```sh 
 npm create vite@latest my-vue-app --template vue
 ```
-[Getting started with Vite](https://vitejs.dev/guide/)
+[Getting started with Vite and Vue](https://vitejs.dev/guide/)
 
 
 ```sh 
@@ -146,7 +146,7 @@ import App from './App.vue'
 
 createApp(App).mount('#app')
 ```
-
+[Creating a Vue Application](https://vuejs.org/guide/essentials/application.html)
 
 # package.json
 
