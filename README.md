@@ -101,6 +101,17 @@ Checkout [Using Media Queries for CSS](https://developer.mozilla.org/en-US/docs/
 }
 ```
 
+# OpenWeatherMap
+
+[Sign up here](https://home.openweathermap.org/users/sign_up)
+
+Once signed up, in your account's My API Keys you are giving a default key.
+You can either use the default key or create a new one. 
+
+<img src="https://i0.wp.com/techtutorialsx.com/wp-content/uploads/2018/03/openweathermap-api-key.png?resize=998%2C562&ssl=1" style="height: 60%;"/>
+
+
+
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
