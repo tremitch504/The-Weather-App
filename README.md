@@ -68,6 +68,10 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 
 
 
+https://github.com/tremitch504/The-Weather-App/assets/51865741/fd0dc9a6-7e52-4730-b999-7fc111dba206
+
+
+
 
 
 # 📖Documentation
