@@ -131,6 +131,22 @@ You can either use the default key or create a new one.
 # 📖Documentation
 <!-- Here: We have the documentation what have to be installed and files created in order to use that stack if needed. -->
 <!-- Examples and commands to get Vue and Vite setup -->
+ ### Vue + Vite
+ To start buuilding a Vite + Vue project run the following command:
+
+```sh 
+npm create vite@latest my-vue-app --template vue
+```
+[Getting started with Vite](https://vitejs.dev/guide/)
+
+
+```sh 
+import { createApp } from 'vue'
+import App from './App.vue'
+
+createApp(App).mount('#app')
+```
+
 
 # package.json
 
@@ -179,3 +195,5 @@ Use this TailwindCSS cheat sheet called [Flowbite](https://flowbite.com/tools/ta
  [Dribble](https://dribbble.com/shots/popular/web-design) gives you ideas on how you may want your UI to look like. This will help you with your creative mind <br /> 
 
 [MobileView](https://github.com/champ3oy/MobileView) is a VS Code extension that helps you view your site in a mobile device 
+
+[Chrome devtools extension for debugging Vue.js applications.](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
