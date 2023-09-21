@@ -58,12 +58,13 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/2560px-Netlify_logo.svg.png" style="height: 80px;"/>
 </div>
 <!-- Here explain what the tech was used for this website! -->
+[Netifly](https://www.netlify.com): a deployment platform, <img style="height: 20px;" src="/public/weather-app.png">The Weather App is deployed on Netifly. It is free, simple, and fast to build
 <ul> 
 <li>TailwindCSS: For a responsive website, this CSS framework gives <img style="height: 20px;" src="/public/weather-app.png">The Weather App a more flexible style for the content when users are visiting the app on a much smaller device than the browser on a computer</li>
 <li>OpenWeatherMap: An open source service that provides weather data via API, <img style="height: 20px;" src="/public/weather-app.png">The Weather App captures all weather data from OpenWeatherMap</li>
 <li>Axios: Axios is a Javascript library used to make HTTP requests from node. js. Axios is used for the API calls to get data back from OpenWeatherMap's API endpoint</li>
-<li>[Netifly](https://www.netlify.com): a deployment platform, <img style="height: 20px;" src="/public/weather-app.png">The Weather App is deployed on Netifly. It is free, simple, and fast to build</li>
 </ul>
+
 
 
 <!-- Here: we show the responsiveness video of the phone screen explaining we used Tailwind -->
@@ -125,6 +126,7 @@ You can either use the default key or create a new one.
 
 # 📖Documentation
 <!-- Here: We have the documentation what have to be installed and files created in order to use that stack if needed. -->
+<!-- Examples and commands to get Vue and Vite setup -->
 
 # package.json
 
