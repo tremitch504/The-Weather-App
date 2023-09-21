@@ -65,16 +65,37 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 
 
 <!-- Here: we show the responsiveness video of the phone screen explaining we used Tailwind -->
-## TailwindCSS
-### Responsiveness
-
- 
+## Responsiveness
 
 https://github.com/tremitch504/The-Weather-App/assets/51865741/fd0dc9a6-7e52-4730-b999-7fc111dba206
 
+### TailwindCSS Funtions and Directives
+```sh
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components {
+    .header-wrapper {
+       @apply  sm:h-80 pt-8  md:h-96 lg:h-96
+    }
+}
+```
+### CSS Media Queries 
 
+```sh
 
+/* Mobile */
+@media only screen and (max-width: 640px) {
+
+    .search-bar { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+```
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
