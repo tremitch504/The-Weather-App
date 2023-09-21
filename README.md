@@ -11,6 +11,8 @@
 
 📖[Documentation](https://github.com/tremitch504/The-Weather-App#Documentation)<br /> 
 
+[Setup](https://github.com/tremitch504/The-Weather-App#Project-Setup)<br /> 
+
 # ⚡️Features 
 <!-- here: Show the website in full screen version screenshot --> 
 <img src="/public/TheWeatherAppFS.png">
@@ -60,7 +62,13 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 </ul>
 
 
-<!-- Here: we show the responsive ness video of the phone screen explaining we used Tailwind -->
+<!-- Here: we show the responsiveness video of the phone screen explaining we used Tailwind -->
+## TailwindCSS
+### Responsiveness
+
+
+
+
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
@@ -80,7 +88,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+# Project Setup
 
 ```sh
 npm install
