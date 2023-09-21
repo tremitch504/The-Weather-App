@@ -170,11 +170,12 @@ npm run lint
 
 # 📌Helpful links
 
-<ul> 
-<li> </li>
-<li>[Vue Essentials](https://vuejs.org/guide/components/props.html) </li>
-<li>Test your API calls with [Postman](https://www.postman.com) to make sure you are getting data back</li>
-<li>Use this TailwindCSS cheat sheet called [Flowbite](https://flowbite.com/tools/tailwind-cheat-sheet/) to help you implement your CSS styles</li>
-<li>[Dribble](https://dribbble.com/shots/popular/web-design) gives you ideas on how you may want your UI to look like. This will help you with your creative mind</li>
-<li>[MobileView](https://github.com/champ3oy/MobileView) is a VS Code extension that helps you view your site in a mobile device</li>
-</ul>
+ Some Vue Docs on [Vue Essentials](https://vuejs.org/guide/components/props.html) <br /> 
+
+Test your API calls with [Postman](https://www.postman.com) to make sure you are getting data back <br /> 
+
+Use this TailwindCSS cheat sheet called [Flowbite](https://flowbite.com/tools/tailwind-cheat-sheet/) to help you implement your CSS styles <br /> 
+
+ [Dribble](https://dribbble.com/shots/popular/web-design) gives you ideas on how you may want your UI to look like. This will help you with your creative mind <br /> 
+
+[MobileView](https://github.com/champ3oy/MobileView) is a VS Code extension that helps you view your site in a mobile device 
