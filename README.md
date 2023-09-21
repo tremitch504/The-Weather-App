@@ -115,7 +115,7 @@ You can either use the default key or create a new one.
 
 Under the API tab next to Guide, you will see different options of data collections you can make API calls to.
 
-<img src="/public/weatherAPIexample.png" style="height: 30%; width: 50%;" />
+<img src="/public/weatherAPIexample.png" style="height: 70%; width: 70%;" />
 
 There are a few ways on how you can do an API call to a collection, you can call by city name or city name, state code and country code.
 
