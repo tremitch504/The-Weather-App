@@ -59,7 +59,7 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 </div>
 <!-- Here explain what the tech was used for this website! -->
 
-[Netifly](https://www.netlify.com) :a deployment platform, <img style="height: 20px;" src="/public/weather-app.png">The Weather App is deployed on Netifly. It is free, simple, and fast to build
+[Netifly](https://www.netlify.com): a deployment platform, <img style="height: 20px;" src="/public/weather-app.png">The Weather App is deployed on Netifly. It is free, simple, and fast to build
 
 <ul> 
 <li>TailwindCSS: For a responsive website, this CSS framework gives <img style="height: 20px;" src="/public/weather-app.png">The Weather App a more flexible style for the content when users are visiting the app on a much smaller device than the browser on a computer</li>
