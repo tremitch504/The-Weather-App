@@ -55,12 +55,14 @@ https://github.com/tremitch504/The-Weather-App/assets/51865741/55ca412e-a870-478
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="height: 80px;"/>
 <img src="https://miro.medium.com/v2/resize:fit:2400/2*zopSONYY0BgrN1xJJrmW6g.png" style="height: 80px;"/>
 <img src="https://www.futuromediagroup.org/wp-content/uploads/2022/11/FM_News_500-2.png" style="height: 80px;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/2560px-Netlify_logo.svg.png" style="height: 80px;"/>
 </div>
 <!-- Here explain what the tech was used for this website! -->
 <ul> 
 <li>TailwindCSS: For a responsive website, this CSS framework gives <img style="height: 20px;" src="/public/weather-app.png">The Weather App a more flexible style for the content when users are visiting the app on a much smaller device than the browser on a computer</li>
 <li>OpenWeatherMap: An open source service that provides weather data via API, <img style="height: 20px;" src="/public/weather-app.png">The Weather App captures all weather data from OpenWeatherMap</li>
 <li>Axios: Axios is a Javascript library used to make HTTP requests from node. js. Axios is used for the API calls to get data back from OpenWeatherMap's API endpoint</li>
+<li>[Netifly](https://www.netlify.com): a deployment platform, <img style="height: 20px;" src="/public/weather-app.png">The Weather App is deployed on Netifly. It is free, simple, and fast to build</li>
 </ul>
 
 
@@ -124,9 +126,6 @@ You can either use the default key or create a new one.
 # 📖Documentation
 <!-- Here: We have the documentation what have to be installed and files created in order to use that stack if needed. -->
 
-
-
-
 # package.json
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -162,3 +161,14 @@ npm run build
 ```sh
 npm run lint
 ```
+
+# Helpful links
+
+<ul> 
+<li> </li>
+<li>[Vue Essentials](https://vuejs.org/guide/components/props.html) </li>
+<li>Test your API calls with [Postman](https://www.postman.com) to make sure you are getting data back</li>
+<li>Use this TailwindCSS cheat sheet called [Flowbite](https://flowbite.com/tools/tailwind-cheat-sheet/) to help you implement your CSS styles</li>
+<li>[Dribble](https://dribbble.com/shots/popular/web-design) gives you ideas on how you may want your UI to look like. This will help you with your creative mind</li>
+<li>[MobileView](https://github.com/champ3oy/MobileView) is a VS Code extension that helps you view your site in a mobile device</li>
+</ul>
