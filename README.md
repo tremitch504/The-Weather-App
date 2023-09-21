@@ -100,8 +100,8 @@ Checkout [Using Media Queries for CSS](https://developer.mozilla.org/en-US/docs/
     }
 }
 ```
-
-# OpenWeatherMap
+<!-- Here: explaining the documentation of the Weather API we used! -->
+# OpenWeatherMap <img src="https://miro.medium.com/v2/resize:fit:2400/2*zopSONYY0BgrN1xJJrmW6g.png" style="height: 50px;"/>
 
 [Sign up here](https://home.openweathermap.org/users/sign_up)
 
@@ -122,8 +122,8 @@ You can either use the default key or create a new one.
 <img src="/public/apiCall.png" style="height: 70%; width: 70%;" />
 
 # 📖Documentation
-Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
-Here: explaining the documentation of the Weather API we used!
+<!-- Here: We have the documentation what have to be installed and files created in order to use that stack if needed. -->
+
 
 
 
