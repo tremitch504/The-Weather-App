@@ -17,7 +17,7 @@
 
 # ⚡️Features 
 <!-- here: Show the website in full screen version screenshot --> 
-<img src="/public/TheWeatherAppFS.png">
+<img src="/public/WeatherAppPreview.png">
 
 <ul>
 <li>A user have the ability to search for any city globally worldwide to capture current and future forecast using the search bar</li>
