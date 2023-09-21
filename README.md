@@ -105,13 +105,21 @@ Checkout [Using Media Queries for CSS](https://developer.mozilla.org/en-US/docs/
 
 [Sign up here](https://home.openweathermap.org/users/sign_up)
 
-Once signed up, in your account's My API Keys you are giving a default key.
+Once signed up, in your account's My API Keys tab you are giving a default key.
 You can either use the default key or create a new one. 
 
 <img src="https://i0.wp.com/techtutorialsx.com/wp-content/uploads/2018/03/openweathermap-api-key.png?resize=998%2C562&ssl=1" style="height: 30%; width: 50%;"/>
 
 
+### Making an API call
 
+Under the API tab next to Guide, you will see different options of data collections you can make API calls to.
+
+<img src="/public/weatherAPIexample.png" style="height: 30%; width: 50%;" />
+
+There are a few ways on how you can do an API call to a collection, you can call by city name or city name, state code and country code.
+
+<img src="/public/apiCall.png" style="height: 30%; width: 50%;" />
 
 # 📖Documentation
 Here: We have the documentation what have to be installed and files created in order to use that stack if needed.
