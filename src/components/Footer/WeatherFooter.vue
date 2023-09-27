@@ -41,7 +41,7 @@ or harmful weather in the atmosphere, outside of your location, or upcoming dest
 </div>
 
 <div class="copyright-text">
-    <p>Copyright &copy; 2023 Tre'von's Websites. All Rights Reserved.</p>
+    <p>Copyright &copy; 2023 Tre'von Websites. All Rights Reserved.</p>
 </div>
 
 </footer>
