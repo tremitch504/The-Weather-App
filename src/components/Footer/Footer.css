@@ -1,5 +1,3 @@
-/* #272829 */
-
 
 @tailwind base;
 @tailwind components;
@@ -7,48 +5,24 @@
 
 
 
-/* @layer components {
 
-    .footer-wrapper {
-         @apply mt-0
-    }
-      
-
-} */
-
-/* { */
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
-    /* font-family: 'Poppins', sans-serif; */
-/* } */
 
 /* The properties here will make our footer wrapper displayed at the every end of our page at bottom */
 /* relative will make the footer move from its position when responsive */
 .footer-wrapper {
-    /* display: grid;
-    justify-content: end;
-    align-content: end; */
+   
     position: absolute;
-    /* bottom: 0; */
+    
     left: 0;
     margin-top: auto;
-    /* width: 100%; */
-    /* height: 20px; */
-    /* min-height: 100vh; */
+   
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
     padding: 3rem;
     background: #272829;
 }
 
- /* footer {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    background: #272829;
-}  */
+
 
 .footer-container {
     width: 100%;
@@ -151,10 +125,7 @@ position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* margin-top: auto; */
-    /* position: relative; 
-    bottom: 0;  
-     left: 0; */
+    
     }
 
     .footer-container {
@@ -162,13 +133,6 @@ position: relative;
         flex-direction: column;
         justify-content: center;
     }
-
-    /* .footer-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    } */
 
     .contact-us {
         position: relative;
@@ -179,25 +143,3 @@ position: relative;
         font-size: 10px;
     }
 }
-
-
-/* 
-@media (max-width: 1128px) {
-
-    .footer-wrapper {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-       
-    }
-} */
-
-/* @media (max-width: 1015px) {
-    .footer-wrapper {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        }
-} */

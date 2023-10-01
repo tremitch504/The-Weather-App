@@ -3,7 +3,7 @@ import './Widget.css'
 import axios from 'axios';
 import moment from 'moment';
 
-// import API_KEY from 'dotenv' 
+
 </script>
  
 <script>
@@ -22,11 +22,10 @@ export default {
     },
     mounted() {
         this.fetchDailyData();
-        console.log()
     },
     methods: {
         async fetchDailyData() {
-            // const apiKey = API_KEY;
+           
             const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${this.name}&units=metric&appid=${import.meta.env.VITE_ACCESS_TOKEN}`;
 
             await axios.get(apiUrl).then(res => {
@@ -40,12 +39,12 @@ export default {
                 const filterData = forecastData.map(day => {
                    
                     let temp;
-                    //   console.log('current degree:', this.tempDegree)
+                    
                     if(this.tempDegree === 'celsius') {
                         temp = Math.round(day.main.temp);
-                        // console.log('current temp:', temp);
+                       
                     }
-                    //  console.log('current temp: ', temp);
+                    
                     if(this.tempDegree === 'fahrenheit') {
                          temp = Math.round((Math.round(day.main.temp) * (9 / 5)) + 32);
                     }
@@ -68,10 +67,9 @@ export default {
 
                   this.forecast = filterData;
                   this.loading = false;
-                // console.log(forecastData, "This is the Original !!");
-                // console.log(filterData, "This is the Filter!!");
+               
             }).catch(error => {
-                // console.log(error)
+                
                 this.loading = false;
             });
         },
@@ -94,7 +92,7 @@ export default {
  <!-- weather widget  -->  
         <div class="widget" v-for="day in forecast" :key="day.date">
             <div class="left-side">
-                <!-- <i class="bi bi-cloud-sun" ></i>  -->
+                
                 <img class='icon-url' :src="day.iconUrl" />
                 <h5 class="weather-status">{{ day.description }}</h5>
             </div>

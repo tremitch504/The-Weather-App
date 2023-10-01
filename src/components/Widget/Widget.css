@@ -9,20 +9,11 @@
      .widget-wrapper {
 
         @apply pt-8 pb-7
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        top: -375px;
-        left: 540px;
-        width: 900px;
-       font-family: 'Libre Baskerville', serif;
-    font-family: 'Poppins', sans-serif;
-        background-color: yellow; */
+      
     } 
     
     .container{
-        /* @apply bg-red */
+        
     }
 
 }
@@ -34,44 +25,28 @@
 
 
 .widget-wrapper {
-    /* display: flex;
-     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    top: -375px;
-    left: 540px;
-    width: 900px; */
+   
    font-family: 'Libre Baskerville', serif;
 font-family: 'Poppins', sans-serif;
-    /* background-color: yellow;  */
+    
 }
 
 
-/* svg.bi-cloud-sun {
-    height: 100px !important;
-    color: palegreen;
-} */
 
 .container {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* width: 400px;
-    height: 500px; */
+  
     display: grid;
     grid-template-columns: repeat(2, 450px);
     gap: 1rem;
-    /* background-color: aquamarine; */
+   
 }
 
  .widget {
- /* display: flex;
- flex-direction: column;
- justify-content: flex-start; */
+ 
 width: 400px;
 height: 200px;
 border-radius: 20px;
-/* background: rgba(299, 299, 2999, 0.4); */
+
 background-image: url("https://images.unsplash.com/photo-1498462335304-e7263fe3925a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Ymx1cnJ5fGVufDB8fDB8fHww&w=1000&q=80") ;
 
 animation-duration: 0.5s;
@@ -97,7 +72,7 @@ animation-duration: 0.5s;
     top: 35px;
     right: -50px;
     width: 200px;
-    /* background-color: green; */
+    
 }
 .widget .right-side {
     position: relative ;
@@ -106,7 +81,7 @@ animation-duration: 0.5s;
     width: 150px;
     color: #fff;
     margin: 50px 0;
-    /* background-color: yellow; */
+   
 }
 
 .weather-status { 
@@ -138,22 +113,28 @@ display: flex;
 align-items: center;
 justify-content: space-between; 
 color: #fff;
-/* background-color: aqua; */
+/* background-color: orange; */
+
 }
 
 .widget-details h1 {
-    margin: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1px 10px 5px 10px;
     text-align: center;
-    line-height: 100%;
-    font-size: 0.83em;
-    text-shadow: 1px 1px 5px #707070;
+    font-weight: 500;
+    /* line-height can change the space between the text */
+    line-height: 140%;
+    font-size: 0.90em;
+    text-shadow: 25px 30px 20px #707070; 
 }
 
-/* .widget-details h1 {
-    display: block;
-} */
-
-.widget-header {
+.widget-details h1 span {
+    font-weight: bold;
+}
+ 
+.widget-header { 
     color: black;  
 }
 
@@ -174,7 +155,7 @@ color: #fff;
 
     .widget {
         width: 350px;
-        /* height: 250px; */
+       
     }
     .widget-details {
         width: 350px;
@@ -187,28 +168,3 @@ color: #fff;
         text-shadow: 1px 1px 5px #707070;
         }
 }
-
-/* Mobile */
-/* @media (max-width: 480px) {
-
-.widget-wrapper {
-    top: 30px;
-    left: 0;
-
-} */
-
-/* Here again we are creating that grid column and gap between each widget */
-/* .container {
-    grid-template-columns: repeat(1, 450px);
-    gap: 2rem; 
-}
-
-.widget { 
-    width: 360px;
-    height: 200px;
-}
-
-.widget-details {
-    width: 350px;
-}
-} */

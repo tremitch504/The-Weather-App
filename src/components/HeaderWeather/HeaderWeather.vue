@@ -1,20 +1,15 @@
 <script setup>
 import './HeaderWeather.css';
 import Weather from '../Weather/Weather.vue'
-// import TestRun from '../TestRun/TestRun.vue';
-// import cities from 'cities.json';
-// import citiesData from '../../Cities/citiesData.json'
 
-//  import {gql} from "@apollo/client"
-// import { useQuery } from '@vue/apollo-composable';
-// import {getBooks} from '../../graphql/Queries';
 </script>
 
 <script>
 
-// let props = defineProps(['city']);
+
 //This is where we will hold and place our state
 export default {
+
     data(){
        return {
         city: '',
@@ -22,49 +17,26 @@ export default {
         listData: [],
         filterData: [],
         isActive: true,
-        tempDegree: 'fahrenheit'
+        tempDegree: 'fahrenheit',
+        time: null,
+  
        }
     },
     mounted() {    
-      // console.log('Api Key', import.meta.env.VITE_ACCESS_TOKEN)
+    this.setTime();
+  
     },
     watch: {
-      // city(newValue) {
-        // console.log("New Value: ", newValue)
-      // console.log(cities); 
-        //*****Here we need to use an API to capture cities*****
-//         this.listData = citiesData.map(val => {
-
-//           // console.log(val)
-//             return {
-//               name: val.city
-//             }
-//           })
-        
-
-//           const word = newValue;
-
-//      const newFilter = this.listData.filter((val) => {
-//           return val.name.toLowerCase().includes(word.toLowerCase());
-// })
-// console.log('Filter:', newFilter)
-//      if(word === "" || this.isActive === false) {
-//       this.filterData = []; 
-//       this.isActive = true;
-//      } else {
-//       this.filterData = newFilter.slice(0,10); 
-//      }
-//       }
-      // },
+    
       listData(newValue){
         
-        // console.log('This is the List of Cities: ', newValue)
+       
       },
       filterData(newValue){
-        // console.log('New Filter ', newValue)
+       
       },
       tempDegree(newValue){
-        // console.log('New Temp ', newValue)
+        
       }
     },
     methods: {
@@ -79,31 +51,33 @@ export default {
           this.city = '';
         },
         async newInput(val) {
-          // this.city = val;
-          // this.isActive = false;
-          
-          // this.filterData = [];
-          // this.showWeather = false;
-          // await this.$nextTick();
-          // this.showWeather = true; 
+         
 
         }, 
-        async changeTemp(e){
-          // console.log(e.target.checked);
-          // e.preventDefault()
-          // this.tempDegree = 'celsius'; 
-          if(e.target.checked === true) {
-            this.tempDegree = 'celsius'; 
-          }
-          if(e.target.checked !== true){
-            this.tempDegree = 'fahrenheit';
-        }
+        async changeTemp(e) {
 
-        //This is where we will display the updated data when the toggle is checked and active
-        this.showWeather = false;
-          await this.$nextTick();
-        this.showWeather = true; 
+              if(e.target.checked === true) {
+                this.tempDegree = 'celsius'; 
+              }
+              if(e.target.checked !== true){
+                this.tempDegree = 'fahrenheit';
+            }
+            //This is where we will display the updated data when the toggle is checked and active
+            this.showWeather = false;
+              await this.$nextTick();
+            this.showWeather = true; 
+            
+          
       },
+
+      setTime() {
+          setInterval(() => {
+            let date = new Date();
+
+            this.time = date.toLocaleTimeString();
+          
+          },1000)
+      }
 
     },
     
@@ -136,6 +110,8 @@ export default {
     
     <!-- Here we want the search bar placed -->
     <div class="search-bar">
+
+<h1 class="current-time">{{time}}</h1> 
     <div class="search-container">
       <form class="search-form" @submit.prevent="searchWeather">
         <!-- here is to put the search logo --> 
@@ -173,9 +149,6 @@ export default {
 
 
 <!-- place Weather section here -->
-<Weather :city="city" :tempDegree="tempDegree" v-if="showWeather"/>
-
-
- 
+<Weather :city="city" :tempDegree="tempDegree"  v-if="showWeather"/>
 
 </template>
