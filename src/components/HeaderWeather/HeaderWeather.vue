@@ -9,7 +9,7 @@ import Weather from '../Weather/Weather.vue'
 
 //This is where we will hold and place our state
 export default {
-
+   props: ['getWeather'],
     data(){
        return {
         city: '',
@@ -24,7 +24,7 @@ export default {
     },
     mounted() {    
     this.setTime();
-  
+
     },
     watch: {
     
@@ -55,17 +55,20 @@ export default {
 
         }, 
         async changeTemp(e) {
+        
+          if(e.target.checked === true) {
+            this.tempDegree = 'celsius'; 
+          }
+          if(e.target.checked !== true){
+            this.tempDegree = 'fahrenheit';
+        }
+              if(this.city.length !== 0){
 
-              if(e.target.checked === true) {
-                this.tempDegree = 'celsius'; 
+              //This is where we will display the updated data when the toggle is checked and active
+              this.showWeather = false;
+                await this.$nextTick();
+              this.showWeather = true; 
               }
-              if(e.target.checked !== true){
-                this.tempDegree = 'fahrenheit';
-            }
-            //This is where we will display the updated data when the toggle is checked and active
-            this.showWeather = false;
-              await this.$nextTick();
-            this.showWeather = true; 
             
           
       },
@@ -96,7 +99,7 @@ export default {
         
     </div>
      <div class="title2">
-        <h2>see what the weather is like today</h2>
+        <h2>see what the weather <span>is like today</span></h2>
      </div>
     </section>
 

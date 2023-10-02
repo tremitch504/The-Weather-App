@@ -17,8 +17,6 @@ export default {
         return {
           
         hourlyWeather: [],
-        long: null,
-        latitude: null,
 
         }
     },
