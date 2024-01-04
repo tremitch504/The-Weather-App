@@ -1,7 +1,7 @@
 <script setup>
 import './HeaderWeather.css';
 import Weather from '../Weather/Weather.vue'
-
+import axios from 'axios';
 </script>
 
 <script>
@@ -24,7 +24,7 @@ export default {
     },
     mounted() {    
     this.setTime();
-
+    
     },
     watch: {
     
@@ -80,6 +80,18 @@ export default {
             this.time = date.toLocaleTimeString();
           
           },1000)
+      },
+      setLocation() {
+        axios.get(`https://ipinfo.io/json?token=${import.meta.env.VITE_IP_INFO_TOKEN}`).then(async (res) =>{
+
+         const currentLocation = res.data.city;
+        this.city = currentLocation;
+        
+        this.showWeather = false;
+          await this.$nextTick();
+          this.showWeather = true; 
+
+      }).catch(error => {console.log(error) })
       }
 
     },
@@ -114,7 +126,7 @@ export default {
     <!-- Here we want the search bar placed -->
     <div class="search-bar">
 
-<h1 class="current-time">{{time}}</h1> 
+<!-- <h1 class="current-time">{{time}}</h1>  -->
     <div class="search-container">
       <form class="search-form" @submit.prevent="searchWeather">
         <!-- here is to put the search logo --> 
@@ -128,10 +140,13 @@ export default {
     <div class="button-wrapper">
       <button class="search-button" role="button" @click="searchWeather"  >Search</button> 
  
+<!-- This is where we want the current location icon button to display -->
+<img class="location-icon" src="/public/placeholder.png"  v-on:click="setLocation">
+
   <input  type="checkbox" id="switch" v-on:change="changeTemp"/>
   <label for="switch">
  <h1 class="fahrenheit">&deg;F</h1>
- <h1 class="celsius">&deg;C</h1>
+ <h1 class="celsius">&deg;C</h1> 
   </label>
     </div>
     

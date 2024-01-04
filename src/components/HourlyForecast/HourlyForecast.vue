@@ -51,9 +51,9 @@ this.getHourly()
         
         
         axios.get(`https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,daily,alerts&appid=${import.meta.env.VITE_ACCESS_TOKEN}&units=metric`).then(res => {
-           
-            const hourlyForecast = res.data.hourly
-            //We get back an data object with an hourly array
+             
+            const hourlyForecast = res.data.hourly 
+            //We get back an data object with an hourly array 
             //the hourly array has about 48 objects inside
             //we only want to take 5 of those hourly forecast objects in the array
             //Also we only want certain properties from this hourly array
@@ -63,7 +63,7 @@ this.getHourly()
                 //Here we need to do some type of converting to convert the Unix time into hh:mm (hours and minutes)
                //We use DateTime from luxon 
                 const newTime = DateTime.fromSeconds(forecast.dt).setZone(res.data.timezone).toFormat('h:mm a');
-                
+            
                 //Another thing we need to do is convert the temperature
                 //and check if user wants fahrenheit or celcius 
                 let temp;

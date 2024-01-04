@@ -73,6 +73,13 @@
         @apply border-solid py-0.5 px-9 h-12 box-border text-center text-white text-sm cursor-pointer bg-black
        
     } 
+
+
+    .location-icon {
+        @apply h-14 
+      }
+
+    
  } 
 
 
@@ -174,7 +181,23 @@ background: #FD8D14;
     font-size: x-large;
 }
 
-
+.location-icon:hover {
+    animation:  bounce 1s linear;
+}
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
 
 /* Media Query section to make the footer section responsive */
 
@@ -186,6 +209,7 @@ background: #FD8D14;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
+        padding-bottom: 0.30rem;
     }
   
 
