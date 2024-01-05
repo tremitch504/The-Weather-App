@@ -82,7 +82,7 @@ export default {
           },1000)
       },
       setLocation() {
-        axios.get(`https://ipinfo.io/json?token=${import.meta.env.VITE_IP_INFO_TOKEN}`).then(async (res) =>{
+        axios.get(`https://ipinfo.io/json?token=8a29f5bea1a521`).then(async (res) =>{
 
          const currentLocation = res.data.city;
         this.city = currentLocation;
