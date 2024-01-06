@@ -82,6 +82,10 @@ export default {
           },1000)
       },
       setLocation() {
+
+if(navigator.geolocation){
+  //getCurrentPosition: which prompts the user for permission then we send a get request to the ipinfo.io api to get the current city.
+  navigator.geolocation.getCurrentPosition(position => {
         axios.get(`https://ipinfo.io/json?token=8a29f5bea1a521`).then(async (res) =>{
 
          const currentLocation = res.data.city;
@@ -92,8 +96,10 @@ export default {
           this.showWeather = true; 
 
       }).catch(error => {console.log(error) })
-      }
 
+    })
+}
+      }
     },
     
 }
