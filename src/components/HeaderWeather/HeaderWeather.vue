@@ -87,7 +87,7 @@ export default {
 
         if(navigator.geolocation){
 
-
+ 
   function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 } 
