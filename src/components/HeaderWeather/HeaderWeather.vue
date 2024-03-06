@@ -2,6 +2,7 @@
 import './HeaderWeather.css';
 import Weather from '../Weather/Weather.vue'
 import axios from 'axios';
+import geolocator from 'geolocator'
 </script>
 
 <script>
@@ -24,7 +25,6 @@ export default {
     },
     mounted() {    
     this.setTime();
-    
     },
     watch: {
     
@@ -82,23 +82,39 @@ export default {
           },1000)
       },
       setLocation() {
+       
+  
 
-if(navigator.geolocation){
-  //getCurrentPosition: which prompts the user for permission then we send a get request to the ipinfo.io api to get the current city.
-  navigator.geolocation.getCurrentPosition(position => {
-        axios.get(`https://ipinfo.io/json?token=8a29f5bea1a521`).then(async (res) =>{
+        if(navigator.geolocation){
 
-         const currentLocation = res.data.city;
-        this.city = currentLocation;
-        
-        this.showWeather = false;
-          await this.$nextTick();
-          this.showWeather = true; 
 
-      }).catch(error => {console.log(error) })
+  function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+} 
 
-    })
-}
+       navigator.geolocation.getCurrentPosition((position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+
+       axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
+      
+            //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
+            let city = res.data.results[0].address_components.find((component) =>
+        component.types.includes("locality")
+      ).long_name;
+
+      this.city = city;
+
+      this.showWeather = false;
+      await this.$nextTick();
+      this.showWeather = true; 
+
+          }).catch(error => {console.log(error) })
+ 
+        }, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
+
+        }
+
       }
     },
     
