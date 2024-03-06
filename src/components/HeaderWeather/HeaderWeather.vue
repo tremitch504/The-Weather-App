@@ -98,7 +98,7 @@ export default {
 
        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
             
-        console.log(res.data)
+        console.log(res)
             //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
             let city = res.data.results[0].address_components.find((component) =>
         component.types.includes("locality")
