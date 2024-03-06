@@ -83,7 +83,7 @@ export default {
       },
       setLocation() {
        
-  
+  console.log('GOOGLE MAP KEY:', import.meta.env.VITE_GOOGLE_MAP_KEY)
 
         if(navigator.geolocation){
 
