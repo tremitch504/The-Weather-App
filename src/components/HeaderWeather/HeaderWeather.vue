@@ -83,33 +83,27 @@ export default {
       },
       setLocation() {
 
-        if(navigator.geolocation){
+        axios.post(`https://www.googleapis.com/geolocation/v1/geolocate?key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(res => {
 
-  function error(err) {
-  console.warn(`ERROR(${err.code}): ${err.message}`);
-} 
-       navigator.geolocation.getCurrentPosition((position) => {
-          const latitude = position.coords.latitude;
-          const longitude = position.coords.longitude;
-
+       const latitude = res.data.location.lat
+       const longitude = res.data.location.lng  
+      
        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
-            
-            //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
-            let city = res.data.results[0].address_components.find((component) =>
-        component.types.includes("locality")
-      ).long_name;
+                           
+                        //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
+                        let city = res.data.results[0].address_components.find((component) =>
+                    component.types.includes("locality")
+                  ).long_name; 
 
-      this.city = city;
+                  this.city = city;
+                              
+                  this.showWeather = false; 
+                  await this.$nextTick();
+                  this.showWeather = true; 
 
-      this.showWeather = false;
-      await this.$nextTick();
-      this.showWeather = true; 
-
-          }).catch(error => {console.log(error) })
- 
-        }, error, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
-
-        }
+                      }).catch(error => {console.log(error) })
+       
+        }).catch( err => console.log(err))
 
       }
     },
