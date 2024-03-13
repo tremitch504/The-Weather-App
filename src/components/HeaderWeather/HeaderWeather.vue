@@ -136,7 +136,7 @@ maximumAge: Infinity})
           if(permissionStatus.state === "granted"){
             //run the function that will make a put and get request to our goolge maps APIs to retrieve the user's current location, once the permission is granted
         this.findLocation()
-          }
+          } 
         };
       }
       //find the location if the user already have granted the permission
