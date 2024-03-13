@@ -150,7 +150,7 @@ maximumAge: Infinity})
       }
     },
     
-}
+} 
 </script>
  
 <template>
