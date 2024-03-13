@@ -126,24 +126,20 @@ axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},
 timeout: 5000,
 maximumAge: Infinity})
  
-           console.log("geolocation here", navigator.geolocation)
-           console.log("PERMISSIONS: ", navigator.permissions)
+
            navigator.permissions.query({
-    name: "geolocation"
+    name: "geolocation" 
   }).then(permissionStatus => {
-       console.log(permissionStatus)
+      
     if (permissionStatus.state === "prompt") {
         permissionStatus.onchange = (evt) => {
-          // console.log(permissionStatus.state)
-          // setLocationAccess(permissionStatus.state === "granted");
-          console.log('event!!', evt);
           if(permissionStatus.state === "granted"){
+            //run the function that will make a put and get request to our goolge maps APIs to retrieve the user's current location, once the permission is granted
         this.findLocation()
-
           }
         };
       }
-
+      //find the location if the user already have granted the permission
       if(permissionStatus.state === "granted"){
            this.findLocation()
       }
