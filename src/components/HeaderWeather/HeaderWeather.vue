@@ -81,30 +81,76 @@ export default {
           
           },1000)
       },
-      setLocation() {
+      findLocation() {
 
         axios.post(`https://www.googleapis.com/geolocation/v1/geolocate?key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(res => {
 
-       const latitude = res.data.location.lat
-       const longitude = res.data.location.lng  
-      
-       axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
-                           
-                        //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
-                        let city = res.data.results[0].address_components.find((component) =>
-                    component.types.includes("locality")
-                  ).long_name; 
+const latitude = res.data.location.lat
+const longitude = res.data.location.lng  
 
-                  this.city = city;
-                              
-                  this.showWeather = false; 
-                  await this.$nextTick();
-                  this.showWeather = true; 
+axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
+                    
+                 //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
+                 let city = res.data.results[0].address_components.find((component) =>
+             component.types.includes("locality")
+           ).long_name; 
 
-                      }).catch(error => {console.log(error) })
+           this.city = city;
+                       
+           this.showWeather = false;  
+           await this.$nextTick();
+           this.showWeather = true; 
+
+               }).catch(error => {console.log(error) })
+
+ }).catch( err => console.log(err))
+      },
+      setLocation() {
+
+    const error = () => {
+      console.log("error!!")
+    }  
+
+   
+    // navigator.geolocation = standard JavaScript API, that returns an object with its own methods and retrieves the user's location data
+    //navigator.permissions =  is an permission API object that will ask a user for the permission to use the geolocation API to find user's location. 
+    //permission request will pop up near browser once the API is first used.
+
+    //query: basic promise that will determine if the user permission access has been granted or denied
+    //parameter: name which API you want to access to  
+    //permissionStatus: the object being returned from the permission API, which gives you the data or status of the permission
+    //permissionStatus object has a onChange event handler that watches for any changes or updates on the staus of the permissionStatus object
+         
+          navigator.geolocation.getCurrentPosition(position => {
+          }, error,{enableHighAccuracy: true,
+timeout: 5000,
+maximumAge: Infinity})
+ 
+           console.log("geolocation here", navigator.geolocation)
+           console.log("PERMISSIONS: ", navigator.permissions)
+           navigator.permissions.query({
+    name: "geolocation"
+  }).then(permissionStatus => {
+       console.log(permissionStatus)
+    if (permissionStatus.state === "prompt") {
+        permissionStatus.onchange = (evt) => {
+          // console.log(permissionStatus.state)
+          // setLocationAccess(permissionStatus.state === "granted");
+          console.log('event!!', evt);
+          if(permissionStatus.state === "granted"){
+        this.findLocation()
+
+          }
+        };
+      }
+
+      if(permissionStatus.state === "granted"){
+           this.findLocation()
+      }
+  })
        
-        }).catch( err => console.log(err))
-
+         
+      
       }
     },
     
