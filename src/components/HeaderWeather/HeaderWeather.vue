@@ -130,7 +130,7 @@ maximumAge: Infinity})
            navigator.permissions.query({
     name: "geolocation" 
   }).then(permissionStatus => {
-      
+       
     if (permissionStatus.state === "prompt") {
         permissionStatus.onchange = (evt) => {
           if(permissionStatus.state === "granted"){
