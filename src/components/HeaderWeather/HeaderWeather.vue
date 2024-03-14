@@ -87,7 +87,7 @@ export default {
 
 const latitude = res.data.location.lat
 const longitude = res.data.location.lng  
-console.log(latitude, longitude)
+
 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
                     
                  //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
