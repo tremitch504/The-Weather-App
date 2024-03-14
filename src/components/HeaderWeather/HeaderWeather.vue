@@ -87,7 +87,7 @@ export default {
 
 const latitude = res.data.location.lat
 const longitude = res.data.location.lng  
-
+console.log(latitude, longitude)
 axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${import.meta.env.VITE_GOOGLE_MAP_KEY}`).then(async (res) =>{
                     
                  //Use find method to loop through the address array to search for the object that has a types array that includes the string "locality"
@@ -121,31 +121,40 @@ axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},
     //permissionStatus: the object being returned from the permission API, which gives you the data or status of the permission
     //permissionStatus object has a onChange event handler that watches for any changes or updates on the staus of the permissionStatus object
          
+    //This will run the findLocation if the browswe, like Safari doesn't work with the Permissions API
           navigator.geolocation.getCurrentPosition(position => {
+            //If a city hasn't been found, find the location when user clicks the event handler
+            //If the weather is already shown, find the location for user when the event has been clicked
+            if(!this.city.length || this.showWeather === true){
+              this.findLocation()
+            }
+           
           }, error,{enableHighAccuracy: true,
 timeout: 5000,
 maximumAge: Infinity})
- 
+
 
            navigator.permissions.query({
     name: "geolocation" 
   }).then(permissionStatus => {
-       
+      
     if (permissionStatus.state === "prompt") {
+      if(navigator.geolocation){
         permissionStatus.onchange = (evt) => {
+             
           if(permissionStatus.state === "granted"){
             //run the function that will make a put and get request to our goolge maps APIs to retrieve the user's current location, once the permission is granted
         this.findLocation()
           } 
         };
       }
+      }
       //find the location if the user already have granted the permission
       if(permissionStatus.state === "granted"){
            this.findLocation()
       }
+     
   })
-       
-         
       
       }
     },
