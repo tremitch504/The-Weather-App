@@ -122,16 +122,21 @@ axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},
     //permissionStatus object has a onChange event handler that watches for any changes or updates on the staus of the permissionStatus object
          
     //This will run the findLocation if the browswe, like Safari doesn't work with the Permissions API
+          
           navigator.geolocation.getCurrentPosition(position => {
             //If a city hasn't been found, find the location when user clicks the event handler
             //If the weather is already shown, find the location for user when the event has been clicked
-            if(!this.city.length || this.showWeather === true){
-              this.findLocation()
+            //Check if the browser the user is using is not Google Chrome, if the browser is Chrome we don't need to run findLocation
+            if(!!window.chrome === false){
+              if(!this.city.length || this.showWeather === true){
+                this.findLocation()
+              } 
             }
            
           }, error,{enableHighAccuracy: true,
 timeout: 5000,
 maximumAge: Infinity})
+  
 
 
            navigator.permissions.query({
