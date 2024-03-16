@@ -40,13 +40,7 @@ here: a gif of the weather App using those features, example: searching for a Ci
   
 <!-- This where we would have a gif or video of the celcius change  -->
 
-
-https://github.com/tremitch504/The-Weather-App/assets/51865741/72b87239-c738-4394-966b-5570ea40ed2a
-
-
 https://github.com/tremitch504/The-Weather-App/assets/51865741/21cba925-4500-440f-a9a8-beb7f5cc1c36
-
-
 
 
 # 🔥Tech Stack
